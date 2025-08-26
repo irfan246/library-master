@@ -303,6 +303,31 @@
     },
     {
       "name": "Scene",
+      "type": "string",
+      "value": "0"
+    },
+    {
+      "name": "CurrentIndex",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "SwipeStartX",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "SwipeEndX",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "SwipeActive",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "PlayerLevel",
       "type": "number",
       "value": 0
     }
@@ -328,7 +353,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5468750000000012,
+        "zoomFactor": 0.689778214010451,
         "windowMask": false
       },
       "objectsGroups": [
@@ -471,8 +496,8 @@
           "persistentUuid": "a9a66c95-74b4-4fad-96f7-67c0c4180d77",
           "width": 174,
           "x": 547,
-          "y": 495,
-          "zOrder": 6,
+          "y": 512,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -488,7 +513,7 @@
           "width": 276.67,
           "x": 538,
           "y": 181,
-          "zOrder": 7,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1710,6 +1735,59 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Button_Karakter",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "Scene",
+                "=",
+                "\"Karakter\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Loading\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -1827,43 +1905,33 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3111974942445203,
+        "zoomFactor": 0.5653158055126312,
         "windowMask": false
       },
       "objectsGroups": [],
       "variables": [
         {
-          "name": "CurrentIndex",
+          "name": "TempIndex",
           "type": "number",
           "value": 0
         },
         {
-          "name": "char",
+          "name": "CharacterJSON",
+          "type": "string",
+          "value": "\"\""
+        },
+        {
+          "name": "Index",
           "type": "number",
           "value": 0
         },
         {
-          "name": "charsCount",
+          "name": "Found",
           "type": "number",
           "value": 0
         },
         {
-          "name": "tempIndex",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "inputCooldown",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "Variable",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "diff",
+          "name": "Loop",
           "type": "number",
           "value": 0
         }
@@ -1901,43 +1969,6 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Karakter",
-          "persistentUuid": "73466ebc-3e65-4a8b-87ca-32c5a4248fef",
-          "width": 0,
-          "x": 1442,
-          "y": -109,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "slotIndex",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "unlock",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "charName",
-              "type": "string",
-              "value": ""
-            },
-            {
-              "name": "isCenter",
-              "type": "number",
-              "value": 0
-            }
-          ]
         }
       ],
       "objects": [
@@ -2067,7 +2098,13 @@
           "name": "Bayangan",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "id",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -2127,7 +2164,23 @@
           "name": "Karakter",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "slot",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "id",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "tempIndex",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
@@ -2398,6 +2451,7 @@
       },
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2410,6 +2464,17 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"PlayerData\"",
+                "\"characters\"",
+                "",
+                "CharacterJSON"
+              ]
+            },
             {
               "type": {
                 "value": "JSONResourceLoader::LoadJSONToGlobal"
@@ -2426,16 +2491,6 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "charsCount",
-                "=",
-                "VariableChildCount(Character.character)"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
                 "CurrentIndex",
                 "=",
                 "0"
@@ -2446,7 +2501,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "inputCooldown",
+                "Found",
                 "=",
                 "0"
               ]
@@ -2456,45 +2511,161 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "tempIndex",
+                "Index",
                 "=",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Loop",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SwipeActive",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "5",
+              "conditions": [],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Karakter",
+                        "SceneWindowWidth()/2",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Karakter",
+                        "slot",
+                        "=",
+                        "Loop"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Karakter",
+                        "id",
+                        "=",
+                        "Loop"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Bayangan",
+                        "SceneWindowWidth()/2",
+                        "560",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Bayangan",
+                        "id",
+                        "=",
+                        "Loop"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Bayangan",
+                        "=",
+                        "Karakter.ZOrder() - 1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Loop",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
         },
         {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
+          "type": "BuiltinCommonInstructions::Repeat",
+          "repeatExpression": "VariableChildCount(Character)",
           "conditions": [
             {
               "type": {
-                "value": "SwipeGesture::SwipeDirection_4way"
-              },
-              "parameters": [
-                "",
-                "\"Left\"",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "NumberVariable"
               },
               "parameters": [
-                "inputCooldown",
-                "<=",
+                "Found",
+                "=",
                 "0"
               ]
             },
             {
               "type": {
-                "value": "NumberVariable"
+                "value": "BuiltinCommonInstructions::CompareNumbers"
               },
               "parameters": [
-                "Character.character",
-                ">",
-                "0"
+                "Character[Index].unlock",
+                "=",
+                "1"
               ]
             }
           ],
@@ -2505,105 +2676,46 @@
               },
               "parameters": [
                 "CurrentIndex",
+                "=",
+                "Index - 2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Found",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Index",
                 "+",
                 "1"
               ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "inputCooldown",
-                "=",
-                "12"
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "CurrentIndex",
-                    ">=",
-                    "VariableChildCount(Character.character)"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "CurrentIndex",
-                    "=",
-                    "0"
-                  ]
-                }
-              ]
             }
           ]
         },
         {
           "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SwipeGesture::SwipeDirection_4way"
-              },
-              "parameters": [
-                "",
-                "\"Right\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "inputCooldown",
-                "<=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Character.character",
-                ">",
-                "0"
-              ]
-            }
-          ],
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Karakter",
+          "conditions": [],
           "actions": [
             {
               "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "CurrentIndex",
-                "-",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "inputCooldown",
+                "TempIndex",
                 "=",
-                "12"
+                "CurrentIndex + Karakter.slot"
               ]
             }
           ],
@@ -2613,10 +2725,10 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "NumberVariable"
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
-                    "CurrentIndex",
+                    "TempIndex",
                     "<",
                     "0"
                   ]
@@ -2628,31 +2740,24 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "CurrentIndex",
+                    "TempIndex",
                     "=",
-                    "VariableChildCount(Character.character) - 1"
+                    "VariableChildCount(Character) + TempIndex"
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": [
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "NumberVariable"
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
-                    "inputCooldown",
-                    ">",
-                    "0"
+                    "TempIndex",
+                    ">=",
+                    "VariableChildCount(Character)"
                   ]
                 }
               ],
@@ -2662,11 +2767,436 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "inputCooldown",
+                    "TempIndex",
+                    "=",
+                    "TempIndex - \n VariableChildCount(Character) "
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Karakter",
+                    "=",
+                    "Karakter.X() + (( (SceneWindowWidth() / 2) + ((Karakter.slot - 2) * 380) ) - Karakter.X()) * 0.1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Karakter",
+                    "=",
+                    "500"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Karakter",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Karakter",
+                    "Animation",
+                    "=",
+                    "Character[TempIndex].name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Karakter",
+                    "Scale",
+                    "=",
+                    "0.25"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Karakter.slot",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Karakter",
+                        "Scale",
+                        "=",
+                        "0.4"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Bayangan",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Karakter",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "Bayangan.id",
+                    "=",
+                    "Karakter.id"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Bayangan",
+                    "=",
+                    "Karakter.X() + (( (SceneWindowWidth() / 2) + ((Karakter.slot - 2) * 380) ) - Karakter.X()) * 0.1",
+                    "=",
+                    "Karakter.Y() "
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Bayangan",
+                    "Scale",
+                    "=",
+                    "0.4"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Karakter.slot",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Bayangan",
+                        "Scale",
+                        "=",
+                        "0.6"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SwipeStartX",
+                "=",
+                "CursorX()"
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "CursorX()",
+                    ">",
+                    "SwipeStartX + 30"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CurrentIndex",
                     "-",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"kiri\" + ToString(CursorX())",
+                    "\"info\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"kiri variable\" + CurrentIndex",
+                    "\"info\"",
+                    ""
+                  ]
                 }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "CursorX()",
+                    "<",
+                    "SwipeStartX - 30"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CurrentIndex",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"kanan\" + ToString(CursorX())",
+                    "\"info\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"kanan variable\" + CurrentIndex",
+                    "\"info\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "CurrentIndex",
+                "<",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CurrentIndex",
+                "=",
+                "VariableChildCount(Character) - 2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "CurrentIndex",
+                ">=",
+                "VariableChildCount(Character)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CurrentIndex",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Button_Kembali",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "Scene",
+                "=",
+                "\"Home\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Loading\"",
+                ""
               ]
             }
           ]
@@ -2855,7 +3385,7 @@
           "persistentUuid": "804209d9-c044-4116-908f-198e8d7f6b8a",
           "width": 174,
           "x": 547,
-          "y": 495,
+          "y": 512,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],

@@ -1,24 +1,22 @@
-{
-    "character": [
-        {
-            "name": "penyihir_unggu",
-            "unlock": 1
-        },
-        {
-            "name": "penyihir_pink",
-            "unlock": 0
-        },
-        {
-            "name": "penyihir_hijau",
-            "unlock": 0
-        },
-        {
-            "name": "shadow_master",
-            "unlock": 0
-        },
-        {
-            "name": "plague_doctor",
-            "unlock": 0
-        }
-    ]
-}
+[
+    {
+        "name": "penyihir_unggu",
+        "unlock": 1
+    },
+    {
+        "name": "penyihir_pink",
+        "unlock": 0
+    },
+    {
+        "name": "penyihir_hijau",
+        "unlock": 0
+    },
+    {
+        "name": "shadow_master",
+        "unlock": 0
+    },
+    {
+        "name": "plague_doctor",
+        "unlock": 0
+    }
+]
