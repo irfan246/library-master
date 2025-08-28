@@ -502,6 +502,118 @@
         "name": "NewSprite3",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "laci 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "laci 1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "laci2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "laci2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "laci3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "laci3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "rak sains2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rak sains2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "rak puisi2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rak puisi2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "rak cerita2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rak cerita2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "rak sains3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rak sains3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "rak cerita3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rak cerita3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "rak puisi3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rak puisi3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "book 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "book 1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "buku.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "buku.json",
+        "userAdded": false
+      },
+      {
+        "file": "book 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "book 2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "book 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "book 3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "book 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "book 4.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -3115,6 +3227,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::ForEach",
           "object": "Karakter",
           "conditions": [],
@@ -5261,11 +5374,31 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4950840073748898,
+        "zoomFactor": 0.5843784410740955,
         "windowMask": false
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "laci",
+          "objects": [
+            {
+              "name": "Laci_1"
+            },
+            {
+              "name": "Laci_2"
+            },
+            {
+              "name": "Laci_3"
+            }
+          ]
+        }
+      ],
       "variables": [
+        {
+          "name": "BukuList",
+          "type": "structure",
+          "children": []
+        },
         {
           "name": "CurrentIndex",
           "type": "number",
@@ -5282,16 +5415,6 @@
           "value": 0
         },
         {
-          "name": "StartIndex",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "TargetIndex",
-          "type": "number",
-          "value": 0
-        },
-        {
           "name": "SwipeStartX",
           "type": "number",
           "value": 0
@@ -5303,11 +5426,6 @@
         },
         {
           "name": "SlotSpacing",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "MaxVisibleDistance",
           "type": "number",
           "value": 0
         },
@@ -5332,17 +5450,12 @@
           "value": 0
         },
         {
-          "name": "TotalSlots",
-          "type": "number",
-          "value": 0
-        },
-        {
           "name": "MaxIndex",
           "type": "number",
           "value": 0
         },
         {
-          "name": "dist",
+          "name": "RandomIndex",
           "type": "number",
           "value": 0
         }
@@ -5475,7 +5588,7 @@
           "width": 1280,
           "x": 0,
           "y": 0,
-          "zOrder": 8,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5515,14 +5628,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 120.34,
+          "depth": 1,
+          "height": 120,
           "layer": "Game",
           "name": "Rak",
           "persistentUuid": "f38ed249-c967-46e3-a1d3-5812653f5459",
-          "width": 105.69,
-          "x": 1174.77,
-          "y": 392.79,
+          "width": 231,
+          "x": 1175,
+          "y": 393,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -5537,14 +5650,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 120.34,
+          "depth": 1,
+          "height": 120,
           "layer": "Game",
           "name": "Rak",
           "persistentUuid": "1bb1692a-fd3b-4c14-af86-a3f349d9d052",
-          "width": 105.69,
-          "x": 1.65,
-          "y": 392.79,
+          "width": 237,
+          "x": -130,
+          "y": 393,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -5558,20 +5671,88 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 29,
+          "customSize": false,
+          "height": 0,
           "keepRatio": true,
           "layer": "Game",
           "name": "NewSprite",
-          "persistentUuid": "80733e45-4f91-445d-9e3d-fca9537e19f5",
-          "width": 53,
-          "x": 636,
-          "y": 310,
+          "persistentUuid": "bd3e34f5-6609-4005-a96b-8fa86164717d",
+          "width": 0,
+          "x": 351,
+          "y": 626,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 84,
+          "keepRatio": true,
+          "layer": "Game",
+          "name": "Level_1",
+          "persistentUuid": "4d861300-ce50-4d29-9808-8576e537bffa",
+          "width": 293,
+          "x": 164,
+          "y": 185,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "laci",
+              "type": "number",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 84,
+          "keepRatio": true,
+          "layer": "Game",
+          "name": "Level_1",
+          "persistentUuid": "ac59d530-c774-4e38-84ec-12e2a21ceed6",
+          "width": 288,
+          "x": 494,
+          "y": 193,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "laci",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 84,
+          "keepRatio": true,
+          "layer": "Game",
+          "name": "Level_1",
+          "persistentUuid": "68331016-344a-40bf-9e44-603425fc507c",
+          "width": 298,
+          "x": 827,
+          "y": 193,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "laci",
+              "type": "number",
+              "value": 3
+            }
+          ]
         }
       ],
       "objects": [
@@ -6304,6 +6485,11 @@
               "name": "tempIndex",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "rel",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -6324,7 +6510,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "rak sains.png",
+                      "image": "rak sains3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6372,7 +6558,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "rak cerita.png",
+                      "image": "rak cerita3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6420,7 +6606,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "rak puisi.png",
+                      "image": "rak puisi3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6520,6 +6706,487 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Laci_1",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "laci 1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 614,
+                            "y": 0
+                          },
+                          {
+                            "x": 614,
+                            "y": 231
+                          },
+                          {
+                            "x": 0,
+                            "y": 231
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Laci_2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "laci2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 0
+                          },
+                          {
+                            "x": 483,
+                            "y": 0
+                          },
+                          {
+                            "x": 483,
+                            "y": 231
+                          },
+                          {
+                            "x": 1,
+                            "y": 231
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Laci_3",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "laci3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 0
+                          },
+                          {
+                            "x": 483,
+                            "y": 0
+                          },
+                          {
+                            "x": 483,
+                            "y": 231
+                          },
+                          {
+                            "x": 1,
+                            "y": 231
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Book",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "huruf",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "laci",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "level",
+              "type": "number",
+              "value": 0
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable",
+              "checkCollisionMask": true
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "P",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book 1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 132,
+                            "y": 0
+                          },
+                          {
+                            "x": 132,
+                            "y": 302
+                          },
+                          {
+                            "x": 0,
+                            "y": 302
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "H",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 132,
+                            "y": 0
+                          },
+                          {
+                            "x": 132,
+                            "y": 302
+                          },
+                          {
+                            "x": 0,
+                            "y": 302
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "M",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book 3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 132,
+                            "y": 0
+                          },
+                          {
+                            "x": 132,
+                            "y": 302
+                          },
+                          {
+                            "x": 0,
+                            "y": 302
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "L",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book 4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 132,
+                            "y": 0
+                          },
+                          {
+                            "x": 132,
+                            "y": 302
+                          },
+                          {
+                            "x": 0,
+                            "y": 302
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Level_1",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "laci",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "hurufDepan",
+              "type": "string",
+              "value": ""
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -6557,6 +7224,21 @@
           },
           {
             "objectName": "NewSprite"
+          },
+          {
+            "objectName": "Laci_1"
+          },
+          {
+            "objectName": "Laci_2"
+          },
+          {
+            "objectName": "Laci_3"
+          },
+          {
+            "objectName": "Book"
+          },
+          {
+            "objectName": "Level_1"
           }
         ]
       },
@@ -6574,6 +7256,27 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "JSONResourceLoader::LoadJSONToScene"
+              },
+              "parameters": [
+                "",
+                "buku.json",
+                "BukuList",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "RandomIndex",
+                "=",
+                "Random(VariableChildCount(BukuList) - 1)"
+              ]
+            },
             {
               "type": {
                 "value": "SetNumberVariable"
@@ -6611,7 +7314,7 @@
               "parameters": [
                 "SlotSpacing",
                 "=",
-                "350"
+                "1047"
               ]
             },
             {
@@ -6651,7 +7354,7 @@
               "parameters": [
                 "SmallWidth",
                 "=",
-                "105.69"
+                "237"
               ]
             },
             {
@@ -6663,14 +7366,133 @@
                 "=",
                 "2"
               ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "NewSprite"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Level_1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Book",
+                "1280",
+                "Meja_Kasir_Game.Y()",
+                "\"Game\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "Book",
+                "huruf",
+                "=",
+                "BukuList[RandomIndex].hurufDepan"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Book",
+                "level",
+                "=",
+                "BukuList[RandomIndex].level"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Book",
+                "Animation",
+                "=",
+                "Book.huruf"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "Book",
+                "Resizable",
+                "66",
+                "151"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Book",
+                "=",
+                "14"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "Book",
+                "Tween",
+                "\"book\"",
+                "NewSprite.X()",
+                "\"linear\"",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Book",
+                "laci",
+                "=",
+                "BukuList[RandomIndex].laci"
+              ]
             }
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::ForEach",
           "object": "Rak",
           "conditions": [],
           "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Rak",
+                "rel",
+                "=",
+                "mod(Rak.slot - CurrentIndex + 3, 3)"
+              ]
+            },
             {
               "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -6680,16 +7502,6 @@
                 "Animation",
                 "=",
                 "CurrentIndex"
-              ]
-            },
-            {
-              "type": {
-                "value": "DebuggerTools::ConsoleLog"
-              },
-              "parameters": [
-                "TempIndex",
-                "\"info\"",
-                ""
               ]
             }
           ],
@@ -6702,9 +7514,9 @@
                     "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
-                    "Rak.slot",
+                    "Rak.rel",
                     "=",
-                    "CurrentIndex"
+                    "0"
                   ]
                 }
               ],
@@ -6733,14 +7545,32 @@
                 },
                 {
                   "type": {
-                    "value": "MettreXY"
+                    "value": "MettreX"
                   },
                   "parameters": [
                     "Rak",
                     "=",
-                    "127.77",
+                    "lerp(Rak.X(), 127.77, 0.1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Rak",
                     "=",
-                    "88.35"
+                    "lerp(Rak.Y(), 88.35, 0.1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Rak",
+                    "=",
+                    "8"
                   ]
                 }
               ]
@@ -6750,13 +7580,12 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
                     "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
-                    "Rak.slot",
+                    "Rak.rel",
                     "=",
-                    "CurrentIndex"
+                    "1"
                   ]
                 }
               ],
@@ -6785,14 +7614,101 @@
                 },
                 {
                   "type": {
-                    "value": "MettreXY"
+                    "value": "MettreX"
                   },
                   "parameters": [
                     "Rak",
                     "=",
-                    "1.65",
+                    "lerp(Rak.X(), 1174.77, 0.1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Rak",
                     "=",
-                    "392.79"
+                    "lerp(Rak.Y(), 392.79, 0.1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Rak",
+                    "=",
+                    "7"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "Rak.rel",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                  },
+                  "parameters": [
+                    "Rak",
+                    "Resizable",
+                    "=",
+                    "lerp(Rak.Width(), SmallWidth, 0.1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetHeight"
+                  },
+                  "parameters": [
+                    "Rak",
+                    "Resizable",
+                    "=",
+                    "lerp(Rak.Height(), SmallHeight, 0.1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Rak",
+                    "=",
+                    "lerp(Rak.X(), -130, 0.1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Rak",
+                    "=",
+                    "lerp(Rak.Y(), 392.79, 0.1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Rak",
+                    "=",
+                    "7"
                   ]
                 }
               ]
@@ -6842,6 +7758,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6883,7 +7800,7 @@
                   "parameters": [
                     "CursorX()",
                     ">",
-                    "SwipeStartX + 30"
+                    "SwipeStartX + 80"
                   ]
                 }
               ],
@@ -6910,7 +7827,7 @@
                   "parameters": [
                     "CursorX()",
                     "<",
-                    "SwipeStartX - 30"
+                    "SwipeStartX - 80"
                   ]
                 }
               ],
@@ -6984,81 +7901,155 @@
           ]
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Book",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
+                "value": "MettreXY"
               },
               "parameters": [
-                "TempIndex",
+                "Book",
                 "=",
-                "CurrentIndex + Rak.slot"
+                "CursorX()",
+                "=",
+                "CursorY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "Book",
+                "Tween",
+                "\"book\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Book",
+                "Level_1",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Book.laci",
+                "=",
+                "Level_1.laci"
               ]
             }
           ],
-          "events": [
+          "actions": [
             {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "Rak.slot",
-                    "=",
-                    "0"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
-                  },
-                  "parameters": [
-                    "Rak",
-                    "Resizable",
-                    "1026.24",
-                    "577.26"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "disabled": true,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "BuiltinCommonInstructions::CompareNumbers"
-                      },
-                      "parameters": [
-                        "Rak.slot",
-                        "=",
-                        "0"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ResizableCapability::ResizableBehavior::SetSize"
-                      },
-                      "parameters": [
-                        "Rak",
-                        "Resizable",
-                        "105.69",
-                        "120.34"
-                      ]
-                    }
-                  ]
-                }
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Book",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Book",
+                "Level_1",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Book.laci",
+                "=",
+                "Level_1.laci"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Book",
+                "=",
+                "NewSprite.X()",
+                "=",
+                "NewSprite.Y()"
               ]
             }
           ]
