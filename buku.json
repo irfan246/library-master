@@ -1,30 +1,35 @@
 [
     {
-        "judul": "Pahlawan Magic",
-        "hurufDepan": "P",
-        "jenis": "fiksiOrNon",
-        "level": 1,
-        "laci": 3
-    },
-    {
-        "judul": "Hidup Bersama",
-        "hurufDepan": "H",
-        "jenis": "fiksiOrNon",
-        "level": 1,
-        "laci": 2
-    },
-    {
-        "judul": "Melaju Tanpa Batas",
-        "hurufDepan": "M",
-        "jenis": "fiksiOrNon",
-        "level": 1,
-        "laci": 3
-    },
-    {
-        "judul": "Lankah yang kembali bertemu",
-        "hurufDepan": "L",
-        "jenis": "fiksiOrNon",
-        "level": 1,
-        "laci": 2
+        "1": [
+        {
+                "judul": "Pahlawan Magic",
+                "hurufDepan": "P",
+                "jenis": "sains",
+                "level": 1,
+                "laci": 1
+            },
+            {
+                "judul": "Hidup Bersama",
+                "hurufDepan": "H",
+                "jenis": "sains",
+                "level": 1,
+                "laci": 2
+            },
+            {
+                "judul": "Melaju Tanpa Batas",
+                "hurufDepan": "M",
+                "jenis": "sains",
+                "level": 1,
+                "laci": 3
+            },
+            {
+                "judul": "Lankah yang kembali bertemu",
+                "hurufDepan": "L",
+                "jenis": "sains",
+                "level": 1,
+                "laci": 2
+            }
+        ]
     }
+    
 ]
