@@ -377,14 +377,6 @@
         "userAdded": false
       },
       {
-        "file": "background game.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "background game.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "penyihir unggu1.png",
         "kind": "image",
         "metadata": "",
@@ -472,30 +464,6 @@
         "userAdded": false
       },
       {
-        "file": "rak cerita.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rak cerita.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "rak puisi.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rak puisi.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "rak sains.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rak sains.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/NewSprite3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -524,30 +492,6 @@
         "kind": "image",
         "metadata": "",
         "name": "laci3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "rak sains2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rak sains2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "rak puisi2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rak puisi2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "rak cerita2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rak cerita2.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -620,6 +564,38 @@
         "kind": "image",
         "metadata": "",
         "name": "background battel.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "background healt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "background healt.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "healt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "healt.png",
         "smoothed": true,
         "userAdded": false
       }
@@ -5528,7 +5504,22 @@
           "value": 0
         },
         {
+          "name": "SpawnFound",
+          "type": "number",
+          "value": 0
+        },
+        {
           "name": "Step",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "UsedLaci",
+          "type": "structure",
+          "children": []
+        },
+        {
+          "name": "SpawnAttempts",
           "type": "number",
           "value": 0
         }
@@ -7942,16 +7933,6 @@
             },
             {
               "type": {
-                "value": "ArrayTools::Shuffle"
-              },
-              "parameters": [
-                "",
-                "BukuList[0]",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -7997,6 +7978,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::ForEach",
           "object": "Rak",
           "conditions": [],
@@ -8257,70 +8239,36 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "RandomIndex",
+                "SpawnFound",
                 "=",
-                "Random(VariableChildCount(BukuList) - 1)"
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SpawnAttempts",
+                "=",
+                "0"
               ]
             }
           ],
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "BukuList[RandomIndex].level",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Placed.Level1",
-                    "<",
-                    "MaxPerLevel"
-                  ]
-                }
-              ],
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "VariableChildCount(BukuList)",
+              "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "",
-                    "Book",
-                    "1280",
-                    "Meja_Kasir_Game.Y()",
-                    "\"Game\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
-                  },
-                  "parameters": [
-                    "Book",
-                    "Resizable",
-                    "66",
-                    "151"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "id",
+                    "RandomIndex",
                     "=",
-                    "NextID"
+                    "Random(VariableChildCount(BukuList) - 1)"
                   ]
                 },
                 {
@@ -8328,461 +8276,674 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "NextID",
-                    "=",
-                    "Book.id + 1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "huruf",
-                    "=",
-                    "BukuList[RandomIndex].hurufDepan"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "laci",
-                    "=",
-                    "BukuList[RandomIndex].laci"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "level",
-                    "=",
-                    "BukuList[RandomIndex].level"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "jenis",
-                    "=",
-                    "BukuList[RandomIndex].jenis"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Book",
-                    "Animation",
-                    "=",
-                    "Book.huruf"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "locked",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
-                  },
-                  "parameters": [
-                    "Book",
-                    "Tween",
-                    "\"book\"",
-                    "NewSprite.X()",
-                    "\"linear\"",
-                    "3",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "Book",
-                    "=",
-                    "14"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "SpawnPending",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Step",
+                    "SpawnAttempts",
                     "+",
                     "1"
                   ]
                 }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "BukuList[RandomIndex].level",
-                    "=",
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Placed.Level1",
-                    "<",
-                    "MaxPerLevel"
-                  ]
-                }
               ],
-              "actions": [
+              "events": [
                 {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "Book",
-                    "1280",
-                    "Meja_Kasir_Game.Y()",
-                    "\"Game\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "SpawnFound",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "BukuList[RandomIndex].level",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Placed.Level1",
+                        "<",
+                        "MaxPerLevel"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "UsedLaci[BukuList[RandomIndex].laci]",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Book",
+                        "1280",
+                        "Meja_Kasir_Game.Y()",
+                        "\"Game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Resizable",
+                        "66",
+                        "151"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "id",
+                        "=",
+                        "NextID"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "NextID",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "huruf",
+                        "=",
+                        "BukuList[RandomIndex].hurufDepan"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "BukuList[RandomIndex].laci"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
+                        "=",
+                        "BukuList[RandomIndex].level"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "jenis",
+                        "=",
+                        "BukuList[RandomIndex].jenis"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Animation",
+                        "=",
+                        "Book.huruf"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "locked",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Tween",
+                        "\"book\"",
+                        "NewSprite.X()",
+                        "\"linear\"",
+                        "3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "UsedLaci[BukuList[RandomIndex].laci]",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SpawnFound",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SpawnPending",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Step",
+                        "+",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
-                  },
-                  "parameters": [
-                    "Book",
-                    "Resizable",
-                    "66",
-                    "151"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "BukuList[RandomIndex].level",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Placed.Level1",
+                        "<",
+                        "MaxPerLevel"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "UsedLaci[BukuList[RandomIndex].laci]",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "SpawnFound",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Book",
+                        "1280",
+                        "Meja_Kasir_Game.Y()",
+                        "\"Game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Resizable",
+                        "66",
+                        "151"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "id",
+                        "=",
+                        "NextID"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "NextID",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "huruf",
+                        "=",
+                        "BukuList[RandomIndex].hurufDepan"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "BukuList[RandomIndex].laci"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
+                        "=",
+                        "BukuList[RandomIndex].level"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "jenis",
+                        "=",
+                        "BukuList[RandomIndex].jenis"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Animation",
+                        "=",
+                        "Book.huruf"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "locked",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Tween",
+                        "\"book\"",
+                        "NewSprite.X()",
+                        "\"linear\"",
+                        "3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "UsedLaci[BukuList[RandomIndex].laci]",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SpawnFound",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SpawnPending",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Step",
+                        "+",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "id",
-                    "=",
-                    "NextID"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "NextID",
-                    "=",
-                    "Book.id + 1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "huruf",
-                    "=",
-                    "BukuList[RandomIndex].hurufDepan"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "laci",
-                    "=",
-                    "BukuList[RandomIndex].laci"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "level",
-                    "=",
-                    "BukuList[RandomIndex].level"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "jenis",
-                    "=",
-                    "BukuList[RandomIndex].jenis"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Book",
-                    "Animation",
-                    "=",
-                    "Book.huruf"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "locked",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
-                  },
-                  "parameters": [
-                    "Book",
-                    "Tween",
-                    "\"book\"",
-                    "NewSprite.X()",
-                    "\"linear\"",
-                    "3",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "Book",
-                    "=",
-                    "14"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "SpawnPending",
-                    "=",
-                    "0"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "BukuList[RandomIndex].level",
-                    "=",
-                    "3"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Placed.Level1",
-                    "<",
-                    "MaxPerLevel"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "Book",
-                    "1280",
-                    "Meja_Kasir_Game.Y()",
-                    "\"Game\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
-                  },
-                  "parameters": [
-                    "Book",
-                    "Resizable",
-                    "66",
-                    "151"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "id",
-                    "=",
-                    "NextID"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "NextID",
-                    "=",
-                    "Book.id + 1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "huruf",
-                    "=",
-                    "BukuList[RandomIndex].hurufDepan"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "laci",
-                    "=",
-                    "BukuList[RandomIndex].laci"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "level",
-                    "=",
-                    "BukuList[RandomIndex].level"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "jenis",
-                    "=",
-                    "BukuList[RandomIndex].jenis"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Book",
-                    "Animation",
-                    "=",
-                    "Book.huruf"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "locked",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
-                  },
-                  "parameters": [
-                    "Book",
-                    "Tween",
-                    "\"book\"",
-                    "NewSprite.X()",
-                    "\"linear\"",
-                    "3",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "Book",
-                    "=",
-                    "14"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "SpawnPending",
-                    "=",
-                    "0"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "BukuList[RandomIndex].level",
+                        "=",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Placed.Level1",
+                        "<",
+                        "MaxPerLevel"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "UsedLaci[BukuList[RandomIndex].laci]",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "SpawnFound",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Book",
+                        "1280",
+                        "Meja_Kasir_Game.Y()",
+                        "\"Game\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Resizable",
+                        "66",
+                        "151"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "id",
+                        "=",
+                        "NextID"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "NextID",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "huruf",
+                        "=",
+                        "BukuList[RandomIndex].hurufDepan"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "BukuList[RandomIndex].laci"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
+                        "=",
+                        "BukuList[RandomIndex].level"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "jenis",
+                        "=",
+                        "BukuList[RandomIndex].jenis"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Animation",
+                        "=",
+                        "Book.huruf"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "locked",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Tween",
+                        "\"book\"",
+                        "NewSprite.X()",
+                        "\"linear\"",
+                        "3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "UsedLaci[BukuList[RandomIndex].laci]",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SpawnFound",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SpawnPending",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Step",
+                        "+",
+                        "1"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -9881,11 +10042,27 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3925161175488224,
+        "zoomFactor": 0.36732575450588223,
         "windowMask": false
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "PlayerHealt",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "EnemyHealt",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "MaxHealt",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -9900,6 +10077,70 @@
           "x": 0,
           "y": 0,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 97.17,
+          "layer": "",
+          "name": "Head_Player",
+          "persistentUuid": "c1dbac3a-1577-4823-82ea-ac64671f74d7",
+          "width": 136.3,
+          "x": 27,
+          "y": 30,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 97.17,
+          "layer": "",
+          "name": "Head_Enemy",
+          "persistentUuid": "3d8adb2e-6645-4af1-8a05-57f7c4b84e9a",
+          "width": 136.67,
+          "x": 1114,
+          "y": 30,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 59,
+          "layer": "",
+          "name": "Background_Healt",
+          "persistentUuid": "cf5d9ee3-34d6-4818-b365-14d2d82e54a2",
+          "width": 397,
+          "x": 176,
+          "y": 38,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 59,
+          "layer": "",
+          "name": "Background_Healt",
+          "persistentUuid": "d13d4867-5b0f-4ebb-8391-7892c75cc6ba",
+          "width": 397,
+          "x": 703,
+          "y": 38,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9965,6 +10206,312 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Head_Player",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 513,
+                            "y": 0
+                          },
+                          {
+                            "x": 513,
+                            "y": 363
+                          },
+                          {
+                            "x": 0,
+                            "y": 363
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Head_Enemy",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 1
+                          },
+                          {
+                            "x": 482,
+                            "y": 1
+                          },
+                          {
+                            "x": 482,
+                            "y": 385
+                          },
+                          {
+                            "x": 0,
+                            "y": 385
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Background_Healt",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "background healt.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 794,
+                            "y": 0
+                          },
+                          {
+                            "x": 794,
+                            "y": 118
+                          },
+                          {
+                            "x": 0,
+                            "y": 118
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Healt_Player",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "slot",
+              "type": "number",
+              "value": 0
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "healt.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 240,
+                            "y": 0
+                          },
+                          {
+                            "x": 240,
+                            "y": 70
+                          },
+                          {
+                            "x": 0,
+                            "y": 70
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HealtEnemy",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "healt.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 240,
+                            "y": 0
+                          },
+                          {
+                            "x": 240,
+                            "y": 70
+                          },
+                          {
+                            "x": 0,
+                            "y": 70
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -9972,6 +10519,21 @@
         "children": [
           {
             "objectName": "Background"
+          },
+          {
+            "objectName": "Head_Player"
+          },
+          {
+            "objectName": "Head_Enemy"
+          },
+          {
+            "objectName": "Background_Healt"
+          },
+          {
+            "objectName": "Healt_Player"
+          },
+          {
+            "objectName": "HealtEnemy"
           }
         ]
       },
@@ -9991,19 +10553,97 @@
           "actions": [
             {
               "type": {
-                "value": "Wait"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "2"
+                "MaxHealt",
+                "=",
+                "3"
               ]
             },
             {
               "type": {
-                "value": "PopScene"
+                "value": "SetNumberVariable"
               },
               "parameters": [
+                "EnemyHealt",
+                "=",
+                "MaxHealt"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerHealt",
+                "=",
+                "MaxHealt"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Healt_Player",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Healt_Player",
+                "190.58",
+                "50.1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Healt_Player",
+                "316",
+                "50.1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Healt_Player",
+                "441",
+                "50.1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "Healt_Player",
+                "Resizable",
+                "119.91",
+                "34.79"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Healt_Player",
+              "conditions": [],
+              "actions": []
             }
           ]
         }
