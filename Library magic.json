@@ -662,6 +662,46 @@
         "name": "Group1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "attack1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "attack1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "attack2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "attack2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "attack3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "attack3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "attack4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "attack4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "attack5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "attack5.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -673,9 +713,32 @@
   "objectsGroups": [],
   "variables": [
     {
+      "folded": true,
       "name": "Character",
       "type": "structure",
       "children": []
+    },
+    {
+      "folded": true,
+      "name": "Click",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Level1",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Level2",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Level3",
+          "type": "number",
+          "value": 0
+        }
+      ]
     },
     {
       "folded": true,
@@ -700,7 +763,6 @@
       ]
     },
     {
-      "folded": true,
       "name": "Level",
       "type": "structure",
       "children": [
@@ -716,6 +778,28 @@
         },
         {
           "name": "3",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "Placed",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Level1",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Level2",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Level3",
           "type": "number",
           "value": 0
         }
@@ -772,29 +856,22 @@
       "value": 0
     },
     {
-      "folded": true,
-      "name": "Placed",
-      "type": "structure",
-      "children": [
-        {
-          "name": "Level1",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "Level2",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "Level3",
-          "type": "number",
-          "value": 0
-        }
-      ]
+      "name": "PlayerHealt",
+      "type": "number",
+      "value": 3
     },
     {
-      "name": "PlayerHealt",
+      "name": "enemyAttack",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "playerAttack",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "EnemyHealt",
       "type": "number",
       "value": 3
     }
@@ -5303,7 +5380,349 @@
           }
         ]
       },
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Level_1",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Level.1",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Click.Level1",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "Scene",
+                "=",
+                "\"Game\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Loading\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Level_2",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Level.2",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AutoTyping::AutoTyping::RestartFromBeginning"
+                  },
+                  "parameters": [
+                    "Text_Tips2",
+                    "AutoTyping",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "12"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Layer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Level.2",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level2",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Scene",
+                    "=",
+                    "\"Game\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Loading\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Level_3",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Level.3",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AutoTyping::AutoTyping::RestartFromBeginning"
+                  },
+                  "parameters": [
+                    "Text_Tips2",
+                    "AutoTyping",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "12"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Layer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Level.3",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level3",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Scene",
+                    "=",
+                    "\"Game\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Loading\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -5482,7 +5901,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6455105703311548,
+        "zoomFactor": 0.5843784410741014,
         "windowMask": false
       },
       "objectsGroups": [
@@ -5742,7 +6161,7 @@
           "width": 1280,
           "x": 0,
           "y": 567.97,
-          "zOrder": 9,
+          "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5917,9 +6336,9 @@
           "layer": "Game",
           "name": "Level_3",
           "persistentUuid": "4889230f-4801-43f6-830a-023058bab81f",
-          "width": 211,
+          "width": 219,
           "x": 157,
-          "y": 531,
+          "y": 533,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -5935,14 +6354,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 78,
+          "height": 90,
           "keepRatio": true,
           "layer": "Game",
           "name": "Level_2",
           "persistentUuid": "4accff96-6961-4a13-912d-fa4302c9580e",
           "width": 218,
-          "x": 157,
-          "y": 362,
+          "x": 158,
+          "y": 353,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -5958,14 +6377,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 78,
+          "height": 90,
           "keepRatio": true,
           "layer": "Game",
           "name": "Level_2",
           "persistentUuid": "c709cc5a-f491-4920-907e-f7b24d409175",
-          "width": 228,
-          "x": 401,
-          "y": 358,
+          "width": 231,
+          "x": 398,
+          "y": 350,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -5981,13 +6400,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 78,
+          "height": 85,
           "keepRatio": true,
           "layer": "Game",
           "name": "Level_2",
           "persistentUuid": "dd64bc69-533f-4ca4-916a-33627c917a6e",
-          "width": 217,
-          "x": 649,
+          "width": 216,
+          "x": 651,
           "y": 355,
           "zOrder": 13,
           "numberProperties": [],
@@ -6004,14 +6423,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 78,
+          "height": 82,
           "keepRatio": true,
           "layer": "Game",
           "name": "Level_2",
           "persistentUuid": "8182ee2b-7f2d-4a8c-b54e-68d633e4984e",
-          "width": 217,
-          "x": 900,
-          "y": 354,
+          "width": 239,
+          "x": 886,
+          "y": 355,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -6032,9 +6451,9 @@
           "layer": "Game",
           "name": "Level_3",
           "persistentUuid": "54317756-5943-4de4-bb45-86ca93a1d8c6",
-          "width": 219,
-          "x": 404,
-          "y": 529,
+          "width": 231,
+          "x": 398,
+          "y": 532,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -6050,14 +6469,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 78,
+          "height": 89,
           "keepRatio": true,
           "layer": "Game",
           "name": "Level_3",
           "persistentUuid": "d37826d6-d49a-4f1f-81c3-5548763a0767",
-          "width": 214,
-          "x": 654,
-          "y": 531,
+          "width": 221,
+          "x": 648,
+          "y": 532,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -6073,14 +6492,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 78,
+          "height": 84,
           "keepRatio": true,
           "layer": "Game",
           "name": "Level_3",
           "persistentUuid": "bdcad128-11fd-4923-bdb9-c779f34d123c",
-          "width": 227,
-          "x": 893,
-          "y": 535,
+          "width": 235,
+          "x": 890,
+          "y": 540,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -7775,7 +8194,6 @@
       },
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -7927,6 +8345,26 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
+                    "Placed.Level2",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Placed.Level3",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
                     "NextID",
                     "=",
                     "0"
@@ -7964,11 +8402,10 @@
                 },
                 {
                   "type": {
-                    "value": "DebuggerTools::ConsoleLog"
+                    "value": "Delete"
                   },
                   "parameters": [
-                    "\"INIT \"+Init",
-                    "\"info\"",
+                    "Book",
                     ""
                   ]
                 }
@@ -8042,6 +8479,16 @@
               },
               "parameters": [
                 "Level_3"
+              ]
+            },
+            {
+              "type": {
+                "value": "DebuggerTools::ConsoleLog"
+              },
+              "parameters": [
+                "BukuList[RandomIndex].level",
+                "\"info\"",
+                ""
               ]
             }
           ]
@@ -8394,6 +8841,16 @@
                         "=",
                         "0"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Click.Level1",
+                        "=",
+                        "1"
+                      ]
                     }
                   ],
                   "actions": [
@@ -8507,7 +8964,7 @@
                       "parameters": [
                         "Book",
                         "=",
-                        "14"
+                        "17"
                       ]
                     },
                     {
@@ -8570,16 +9027,6 @@
                         "+",
                         "1"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "DebuggerTools::ConsoleLog"
-                      },
-                      "parameters": [
-                        "Book.laci",
-                        "\"info\"",
-                        ""
-                      ]
                     }
                   ]
                 },
@@ -8588,12 +9035,12 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                        "value": "NumberVariable"
                       },
                       "parameters": [
-                        "BukuList[RandomIndex].level",
+                        "SpawnFound",
                         "=",
-                        "2"
+                        "0"
                       ]
                     },
                     {
@@ -8601,9 +9048,19 @@
                         "value": "NumberVariable"
                       },
                       "parameters": [
-                        "Placed.Level1",
+                        "Placed.Level2",
                         "<",
                         "MaxPerLevel"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "BukuList[RandomIndex].level",
+                        "=",
+                        "2"
                       ]
                     },
                     {
@@ -8621,9 +9078,9 @@
                         "value": "NumberVariable"
                       },
                       "parameters": [
-                        "SpawnFound",
+                        "Click.Level2",
                         "=",
-                        "0"
+                        "1"
                       ]
                     }
                   ],
@@ -8659,16 +9116,6 @@
                         "Book",
                         "id",
                         "=",
-                        "NextID"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "NextID",
-                        "+",
                         "1"
                       ]
                     },
@@ -8729,17 +9176,6 @@
                     },
                     {
                       "type": {
-                        "value": "SetNumberObjectVariable"
-                      },
-                      "parameters": [
-                        "Book",
-                        "locked",
-                        "=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
                       },
                       "parameters": [
@@ -8759,7 +9195,7 @@
                       "parameters": [
                         "Book",
                         "=",
-                        "14"
+                        "17"
                       ]
                     },
                     {
@@ -8790,6 +9226,27 @@
                         "SpawnPending",
                         "=",
                         "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "locked",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "NextID",
+                        "+",
+                        "1"
                       ]
                     },
                     {
@@ -8822,7 +9279,7 @@
                         "value": "NumberVariable"
                       },
                       "parameters": [
-                        "Placed.Level1",
+                        "Placed.Level3",
                         "<",
                         "MaxPerLevel"
                       ]
@@ -8845,6 +9302,16 @@
                         "SpawnFound",
                         "=",
                         "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Click.Level3",
+                        "=",
+                        "1"
                       ]
                     }
                   ],
@@ -8880,16 +9347,6 @@
                         "Book",
                         "id",
                         "=",
-                        "NextID"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "NextID",
-                        "+",
                         "1"
                       ]
                     },
@@ -8950,17 +9407,6 @@
                     },
                     {
                       "type": {
-                        "value": "SetNumberObjectVariable"
-                      },
-                      "parameters": [
-                        "Book",
-                        "locked",
-                        "=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
                       },
                       "parameters": [
@@ -8980,7 +9426,7 @@
                       "parameters": [
                         "Book",
                         "=",
-                        "14"
+                        "17"
                       ]
                     },
                     {
@@ -9011,6 +9457,27 @@
                         "SpawnPending",
                         "=",
                         "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "locked",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "NextID",
+                        "+",
+                        "1"
                       ]
                     },
                     {
@@ -9215,6 +9682,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -9356,6 +9824,844 @@
                   },
                   "parameters": [
                     "Book",
+                    "Rak",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Book",
+                    "Level_3",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Book",
+                    "laci",
+                    "=",
+                    "Level_3.laci"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "Rak",
+                    "jenis",
+                    "=",
+                    "Book.jenis"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Book",
+                    "level",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Book",
+                    "locked",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Book",
+                    "id",
+                    "=",
+                    "BookId"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Book",
+                    "=",
+                    "Text_Level.X()",
+                    "=",
+                    "Text_Level.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Book",
+                    "=",
+                    "14"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "JustBackFromBattle",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Book",
+                    "locked",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "playerAttack",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SpawnPending",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Placed.Level3",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Battel\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "239",
+                        "=",
+                        "550"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Scale",
+                        "=",
+                        "0.3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "395",
+                        "=",
+                        "550"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Scale",
+                        "=",
+                        "0.3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "738",
+                        "=",
+                        "550"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Scale",
+                        "=",
+                        "0.3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "1037",
+                        "=",
+                        "550"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Scale",
+                        "=",
+                        "0.3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Book",
+                    "Rak",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Book",
+                    "Level_2",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Book",
+                    "laci",
+                    "=",
+                    "Level_2.laci"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "Rak",
+                    "jenis",
+                    "=",
+                    "Book.jenis"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Book",
+                    "level",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Book",
+                    "locked",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Book",
+                    "id",
+                    "=",
+                    "BookId"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Book",
+                    "=",
+                    "Text_Level.X()",
+                    "=",
+                    "Text_Level.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Book",
+                    "=",
+                    "14"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "JustBackFromBattle",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Book",
+                    "locked",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "playerAttack",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SpawnPending",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Placed.Level2",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Battel\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "321",
+                        "=",
+                        "351"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Scale",
+                        "=",
+                        "0.3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "559",
+                        "=",
+                        "351"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Scale",
+                        "=",
+                        "0.3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "815",
+                        "=",
+                        "351"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Scale",
+                        "=",
+                        "0.3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "888",
+                        "=",
+                        "351"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Scale",
+                        "=",
+                        "0.3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Book",
                     "Level_1",
                     "",
                     "",
@@ -9467,8 +10773,8 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Placed.Level1",
-                    "+",
+                    "SpawnPending",
+                    "=",
                     "1"
                   ]
                 },
@@ -9477,8 +10783,18 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "SpawnPending",
+                    "playerAttack",
                     "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Placed.Level1",
+                    "+",
                     "1"
                   ]
                 },
@@ -9503,6 +10819,17 @@
                       "parameters": [
                         "Book",
                         "laci",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
                         "=",
                         "1"
                       ]
@@ -9531,6 +10858,16 @@
                         "=",
                         "0.3"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
+                      ]
                     }
                   ]
                 },
@@ -9546,6 +10883,17 @@
                         "laci",
                         "=",
                         "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
+                        "=",
+                        "1"
                       ]
                     }
                   ],
@@ -9572,6 +10920,16 @@
                         "=",
                         "0.3"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
+                      ]
                     }
                   ]
                 },
@@ -9587,6 +10945,17 @@
                         "laci",
                         "=",
                         "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "level",
+                        "=",
+                        "1"
                       ]
                     }
                   ],
@@ -9612,6 +10981,16 @@
                         "Scale",
                         "=",
                         "0.3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Book",
+                        "=",
+                        "14"
                       ]
                     }
                   ]
@@ -9671,6 +11050,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "enemyAttack",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "MettreXY"
                   },
                   "parameters": [
@@ -9680,255 +11069,14 @@
                     "=",
                     "NewSprite.Y()"
                   ]
-                }
-              ]
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "Book.laci",
-                    "=",
-                    "Level_2.laci"
-                  ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::CompareStrings"
-                  },
-                  "parameters": [
-                    "Rak.jenis",
-                    "=",
-                    "BukuList[RandomIndex].jenis"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Book",
-                    "Rak",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Book",
-                    "Level_2",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "Book.level",
-                    "=",
-                    "2"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "Book",
-                    "=",
-                    "Text_Level.X()",
-                    "=",
-                    "Text_Level.Y()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "Book",
-                    "=",
-                    "14"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Placed.Level2",
-                    "+",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "JustBackFromBattle",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "locked",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene"
+                    "value": "PushScene"
                   },
                   "parameters": [
                     "",
-                    "\"Battel\"",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "Book.laci",
-                    "=",
-                    "Level_3.laci"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareStrings"
-                  },
-                  "parameters": [
-                    "Rak.jenis",
-                    "=",
-                    "BukuList[RandomIndex].jenis"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Book",
-                    "Rak",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Book",
-                    "Level_3",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "Book.level",
-                    "=",
-                    "3"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "Book",
-                    "=",
-                    "Text_Level.X()",
-                    "=",
-                    "Text_Level.Y()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "Book",
-                    "=",
-                    "14"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Placed.Level3",
-                    "+",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "JustBackFromBattle",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Book",
-                    "locked",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Battel\"",
-                    ""
+                    "\"Battel\""
                   ]
                 }
               ]
@@ -11245,6 +12393,210 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "EffectNewSprite",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.2,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "attack1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 818,
+                            "y": 0
+                          },
+                          {
+                            "x": 818,
+                            "y": 700
+                          },
+                          {
+                            "x": 0,
+                            "y": 700
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "attack2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 818,
+                            "y": 0
+                          },
+                          {
+                            "x": 818,
+                            "y": 700
+                          },
+                          {
+                            "x": 0,
+                            "y": 700
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "attack3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 818,
+                            "y": 0
+                          },
+                          {
+                            "x": 818,
+                            "y": 700
+                          },
+                          {
+                            "x": 0,
+                            "y": 700
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "attack4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 818,
+                            "y": 0
+                          },
+                          {
+                            "x": 818,
+                            "y": 700
+                          },
+                          {
+                            "x": 0,
+                            "y": 700
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "attack5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 818,
+                            "y": 0
+                          },
+                          {
+                            "x": 818,
+                            "y": 700
+                          },
+                          {
+                            "x": 0,
+                            "y": 700
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -11261,6 +12613,9 @@
           },
           {
             "objectName": "Player_Penyihir_Unggu"
+          },
+          {
+            "objectName": "EffectNewSprite"
           },
           {
             "objectName": "Health_Player"
@@ -11297,6 +12652,17 @@
                 "=",
                 "PlayerHealt"
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Health_Enemy",
+                "Animation",
+                "=",
+                "EnemyHealt"
+              ]
             }
           ]
         },
@@ -11305,10 +12671,24 @@
           "conditions": [
             {
               "type": {
-                "value": "SourisSurObjet"
+                "value": "NumberVariable"
               },
               "parameters": [
-                "Player_Penyihir_Unggu",
+                "playerAttack",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Enemy_Penyihir_Pink",
+                "Health",
+                "1",
                 "",
                 "",
                 ""
@@ -11316,18 +12696,65 @@
             },
             {
               "type": {
-                "value": "MouseButtonFromTextPressed"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "",
-                "\"Left\""
+                "EnemyHealt",
+                "-",
+                "1"
               ]
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
+                "value": "SetNumberVariable"
               },
-              "parameters": []
+              "parameters": [
+                "playerAttack",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Health_Enemy",
+                "Animation",
+                "=",
+                "EnemyHealt"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PopScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "enemyAttack",
+                "=",
+                "1"
+              ]
             }
           ],
           "actions": [
@@ -11356,6 +12783,16 @@
             },
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "enemyAttack",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
@@ -11367,10 +12804,220 @@
             },
             {
               "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "PopScene"
               },
               "parameters": [
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "EnemyHealt",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "PlayerHealt",
+                "=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level1",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Level.2",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level1",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level2",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level3",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "EnemyHealt",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PlayerHealt",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Level\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level2",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Level.3",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level3",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level2",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level1",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PlayerHealt",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "EnemyHealt",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Level\"",
+                    ""
+                  ]
+                }
               ]
             }
           ]
