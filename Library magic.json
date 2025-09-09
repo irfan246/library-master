@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Home",
   "gdVersion": {
     "build": 239,
     "major": 5,
@@ -913,12 +913,12 @@
     {
       "name": "Lose",
       "type": "number",
-      "value": 1
+      "value": 0
     },
     {
       "name": "Win",
       "type": "number",
-      "value": 0
+      "value": 1
     },
     {
       "name": "selectedCharacter",
@@ -973,7 +973,7 @@
     {
       "name": "PlayerHealt",
       "type": "number",
-      "value": 1
+      "value": 3
     },
     {
       "name": "enemyAttack",
@@ -988,7 +988,7 @@
     {
       "name": "EnemyHealt",
       "type": "number",
-      "value": 2
+      "value": 3
     }
   ],
   "layouts": [
@@ -2515,6 +2515,59 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
+                "Button_Main",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "Scene",
+                "=",
+                "\"Level\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Loading\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
                 "Button Back",
                 "",
                 "",
@@ -2612,6 +2665,90 @@
                 "\"Effect\"",
                 "\"blur\"",
                 "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Switch_Music",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SpriteToggleSwitch::SpriteToggleSwitch::ToggleChecked"
+              },
+              "parameters": [
+                "Switch_Music",
+                "Opacity"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Switch_Sound",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SpriteToggleSwitch::SpriteToggleSwitch::ToggleChecked"
+              },
+              "parameters": [
+                "Switch_Sound",
+                "Opacity"
               ]
             }
           ]
@@ -3006,9 +3143,24 @@
               "name": "tempIndex",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "value": ""
             }
           ],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "Brightness",
+              "name": "Effect",
+              "doubleParameters": {
+                "brightness": 1
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [
             {
               "name": "Tween",
@@ -3663,6 +3815,64 @@
                         "value": "BuiltinCommonInstructions::CompareNumbers"
                       },
                       "parameters": [
+                        "Character[TempIndex].unlock",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Karakter",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"brightness\"",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Character[TempIndex].unlock",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Karakter",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"brightness\"",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
                         "Karakter.slot",
                         "=",
                         "2"
@@ -3680,6 +3890,73 @@
                         "=",
                         "0.4"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringObjectVariable"
+                      },
+                      "parameters": [
+                        "Karakter",
+                        "name",
+                        "=",
+                        "Character[TempIndex].name"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "Character[TempIndex].unlock",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetStringVariable"
+                          },
+                          "parameters": [
+                            "selectedCharacter",
+                            "=",
+                            "Karakter.name"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "Character[TempIndex].unlock",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetStringVariable"
+                          },
+                          "parameters": [
+                            "selectedCharacter",
+                            "=",
+                            "\"\""
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -3688,7 +3965,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::ForEach",
           "object": "Bayangan",
           "conditions": [],
@@ -3800,7 +4076,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -8309,6 +8584,7 @@
       },
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -8321,6 +8597,17 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "JSONResourceLoader::LoadJSONToScene"
+              },
+              "parameters": [
+                "",
+                "buku.json",
+                "BukuList",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "SetNumberVariable"
@@ -8413,10 +8700,44 @@
             },
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SpawnPending",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "Cache"
               },
               "parameters": [
                 "NewSprite"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Level_1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Level_2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Level_3"
               ]
             },
             {
@@ -8524,86 +8845,6 @@
                     ""
                   ]
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "JSONResourceLoader::LoadJSONToScene"
-              },
-              "parameters": [
-                "",
-                "buku.json",
-                "BukuList",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "SpawnPending",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "JustBackFromBattle",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "Level_1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "Level_2"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "Level_3"
-              ]
-            },
-            {
-              "type": {
-                "value": "DebuggerTools::ConsoleLog"
-              },
-              "parameters": [
-                "BukuList[RandomIndex].level",
-                "\"info\"",
-                ""
               ]
             }
           ]
@@ -9931,6 +10172,7 @@
           "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -10034,16 +10276,6 @@
                     "Book",
                     "=",
                     "14"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "JustBackFromBattle",
-                    "=",
-                    "1"
                   ]
                 },
                 {
@@ -10457,16 +10689,6 @@
                 },
                 {
                   "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "JustBackFromBattle",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
@@ -10864,16 +11086,6 @@
                 },
                 {
                   "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "JustBackFromBattle",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
@@ -11175,14 +11387,21 @@
                 },
                 {
                   "type": {
-                    "value": "MettreXY"
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SpawnPending",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
                   },
                   "parameters": [
                     "Book",
-                    "=",
-                    "NewSprite.X()",
-                    "=",
-                    "NewSprite.Y()"
+                    ""
                   ]
                 },
                 {
@@ -11194,33 +11413,6 @@
                     "\"Battel\""
                   ]
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SceneJustResumed"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "Book",
-                "locked",
-                "=",
-                "0"
               ]
             }
           ]
@@ -12936,7 +13128,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -12982,7 +13173,7 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Level.2",
+                    "Win",
                     "=",
                     "1"
                   ]
@@ -12992,59 +13183,18 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Click.Level1",
+                    "Level.2",
                     "=",
-                    "0"
+                    "1"
                   ]
                 },
                 {
                   "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Click.Level2",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Click.Level3",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "EnemyHealt",
-                    "=",
-                    "3"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "PlayerHealt",
-                    "=",
-                    "3"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene"
+                    "value": "PushScene"
                   },
                   "parameters": [
                     "",
-                    "\"Level\"",
-                    ""
+                    "\"End\""
                   ]
                 }
               ]
@@ -13069,7 +13219,7 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Level.3",
+                    "Win",
                     "=",
                     "1"
                   ]
@@ -13079,29 +13229,109 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Click.Level3",
+                    "Level.3",
                     "=",
-                    "0"
+                    "1"
                   ]
                 },
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"End\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level3",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
                 {
                   "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Click.Level2",
+                    "Win",
                     "=",
-                    "0"
+                    "1"
                   ]
                 },
                 {
                   "type": {
-                    "value": "SetNumberVariable"
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"End\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "EnemyHealt",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "PlayerHealt",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
                   },
                   "parameters": [
                     "Click.Level1",
                     "=",
-                    "0"
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Win",
+                    "=",
+                    "1"
                   ]
                 },
                 {
@@ -13109,29 +13339,372 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "PlayerHealt",
+                    "Level.2",
                     "=",
-                    "3"
+                    "1"
                   ]
                 },
                 {
                   "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "EnemyHealt",
-                    "=",
-                    "3"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene"
+                    "value": "PushScene"
                   },
                   "parameters": [
                     "",
-                    "\"Level\"",
-                    ""
+                    "\"End\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level2",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Win",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Level.3",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"End\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level3",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Win",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"End\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "EnemyHealt",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "PlayerHealt",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level1",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Lose",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"End\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level2",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Lose",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"End\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level3",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Lose",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"End\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "EnemyHealt",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "PlayerHealt",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level1",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Lose",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"End\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level2",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Lose",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"End\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level3",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Lose",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"End\""
                   ]
                 }
               ]
@@ -14123,28 +14696,14 @@
           "conditions": [
             {
               "type": {
-                "value": "NumberVariable"
+                "value": "DepartScene"
               },
               "parameters": [
-                "Win",
-                "=",
-                "1"
+                ""
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Background",
-                "Animation",
-                "=",
-                "\"win\""
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
             {
               "folded": true,
@@ -14155,19 +14714,9 @@
                     "value": "NumberVariable"
                   },
                   "parameters": [
-                    "PlayerHealt",
+                    "Win",
                     "=",
-                    "3"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "EnemyHealt",
-                    "=",
-                    "0"
+                    "1"
                   ]
                 }
               ],
@@ -14177,97 +14726,222 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "badget",
+                    "Background",
                     "Animation",
                     "=",
-                    "\"win3\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
-                  },
-                  "parameters": [
-                    "badget",
-                    "Tween",
-                    "\"badgePositon\"",
-                    "387",
-                    "16",
-                    "\"linear\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectHeightTween2"
-                  },
-                  "parameters": [
-                    "badget",
-                    "Tween",
-                    "\"badgeHeight\"",
-                    "209.05",
-                    "\"linear\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
-                  },
-                  "parameters": [
-                    "badget",
-                    "Tween",
-                    "\"badgewidth\"",
-                    "507",
-                    "\"linear\"",
-                    "1",
-                    ""
+                    "\"win\""
                   ]
                 }
               ],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "Tween::Exists"
+                        "value": "NumberVariable"
                       },
                       "parameters": [
-                        "badget",
-                        "Tween",
-                        "\"badgePositon\""
+                        "PlayerHealt",
+                        "=",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "EnemyHealt",
+                        "=",
+                        "0"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "Wait"
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
                       },
                       "parameters": [
+                        "badget",
+                        "Animation",
+                        "=",
+                        "\"win3\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "badget",
+                        "Tween",
+                        "\"badgePositon\"",
+                        "387",
+                        "16",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectHeightTween2"
+                      },
+                      "parameters": [
+                        "badget",
+                        "Tween",
+                        "\"badgeHeight\"",
+                        "209.05",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                      },
+                      "parameters": [
+                        "badget",
+                        "Tween",
+                        "\"badgewidth\"",
+                        "507",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Tween::Exists"
+                          },
+                          "parameters": [
+                            "badget",
+                            "Tween",
+                            "\"badgePositon\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Penyihir_Unggu",
+                            "Tween",
+                            "\"karakter\"",
+                            "255",
+                            "\"linear\"",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Bayangan",
+                            "Tween",
+                            "\"bayangan\"",
+                            "255",
+                            "\"linear\"",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Text_Menu",
+                            "1040",
+                            "313",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Text_Exit_Game",
+                            "1000",
+                            "379",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "PlayerHealt",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "EnemyHealt",
+                        "=",
                         "1"
                       ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "badget",
+                        "Animation",
+                        "=",
+                        "\"win2\""
+                      ]
                     },
                     {
                       "type": {
-                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
                       },
                       "parameters": [
-                        "Penyihir_Unggu",
+                        "badget",
                         "Tween",
-                        "\"karakter\"",
-                        "255",
+                        "\"badgePositon\"",
+                        "387",
+                        "16",
                         "\"linear\"",
                         "1",
                         ""
@@ -14275,13 +14949,13 @@
                     },
                     {
                       "type": {
-                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                        "value": "Tween::TweenBehavior::AddObjectHeightTween2"
                       },
                       "parameters": [
-                        "Bayangan",
+                        "badget",
                         "Tween",
-                        "\"bayangan\"",
-                        "255",
+                        "\"badgeHeight\"",
+                        "209.05",
                         "\"linear\"",
                         "1",
                         ""
@@ -14289,26 +14963,95 @@
                     },
                     {
                       "type": {
-                        "value": "Create"
+                        "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                       },
                       "parameters": [
-                        "",
-                        "Text_Menu",
-                        "1040",
-                        "313",
+                        "badget",
+                        "Tween",
+                        "\"badgewidth\"",
+                        "507",
+                        "\"linear\"",
+                        "1",
                         ""
                       ]
-                    },
+                    }
+                  ],
+                  "events": [
                     {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Text_Exit_Game",
-                        "1000",
-                        "379",
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Tween::Exists"
+                          },
+                          "parameters": [
+                            "badget",
+                            "Tween",
+                            "\"badgePositon\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Penyihir_Unggu",
+                            "Tween",
+                            "\"karakter\"",
+                            "255",
+                            "\"linear\"",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Bayangan",
+                            "Tween",
+                            "\"bayangan\"",
+                            "255",
+                            "\"linear\"",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Text_Menu",
+                            "1040",
+                            "313",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Text_Exit_Game",
+                            "1000",
+                            "379",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -14324,17 +15067,7 @@
                     "value": "NumberVariable"
                   },
                   "parameters": [
-                    "PlayerHealt",
-                    "=",
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "EnemyHealt",
+                    "Lose",
                     "=",
                     "1"
                   ]
@@ -14346,545 +15079,289 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "badget",
-                    "Animation",
-                    "=",
-                    "\"win2\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
-                  },
-                  "parameters": [
-                    "badget",
-                    "Tween",
-                    "\"badgePositon\"",
-                    "387",
-                    "16",
-                    "\"linear\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectHeightTween2"
-                  },
-                  "parameters": [
-                    "badget",
-                    "Tween",
-                    "\"badgeHeight\"",
-                    "209.05",
-                    "\"linear\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
-                  },
-                  "parameters": [
-                    "badget",
-                    "Tween",
-                    "\"badgewidth\"",
-                    "507",
-                    "\"linear\"",
-                    "1",
-                    ""
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "Tween::Exists"
-                      },
-                      "parameters": [
-                        "badget",
-                        "Tween",
-                        "\"badgePositon\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                      },
-                      "parameters": [
-                        "Penyihir_Unggu",
-                        "Tween",
-                        "\"karakter\"",
-                        "255",
-                        "\"linear\"",
-                        "1",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                      },
-                      "parameters": [
-                        "Bayangan",
-                        "Tween",
-                        "\"bayangan\"",
-                        "255",
-                        "\"linear\"",
-                        "1",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Text_Menu",
-                        "1040",
-                        "313",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Text_Exit_Game",
-                        "1000",
-                        "379",
-                        ""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Lose",
-                "=",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Background",
-                "Animation",
-                "=",
-                "\"lose\""
-              ]
-            }
-          ],
-          "events": [
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "PlayerHealt",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "EnemyHealt",
-                    "=",
-                    "2"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "badget",
-                    "Animation",
-                    "=",
-                    "\"lose1\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
-                  },
-                  "parameters": [
-                    "badget",
-                    "Tween",
-                    "\"badgePositon\"",
-                    "387",
-                    "16",
-                    "\"linear\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectHeightTween2"
-                  },
-                  "parameters": [
-                    "badget",
-                    "Tween",
-                    "\"badgeHeight\"",
-                    "209.05",
-                    "\"linear\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
-                  },
-                  "parameters": [
-                    "badget",
-                    "Tween",
-                    "\"badgewidth\"",
-                    "507",
-                    "\"linear\"",
-                    "1",
-                    ""
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "Tween::Exists"
-                      },
-                      "parameters": [
-                        "badget",
-                        "Tween",
-                        "\"badgePositon\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Penyihir_Unggu",
-                        "Animation",
-                        "=",
-                        "\"lose\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ResizableCapability::ResizableBehavior::SetSize"
-                      },
-                      "parameters": [
-                        "Penyihir_Unggu",
-                        "Resizable",
-                        "152",
-                        "187"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "Penyihir_Unggu",
-                        "=",
-                        "564",
-                        "=",
-                        "381"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Bayangan",
-                        "Animation",
-                        "=",
-                        "\"lose\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ResizableCapability::ResizableBehavior::SetSize"
-                      },
-                      "parameters": [
-                        "Bayangan",
-                        "Resizable",
-                        "526",
-                        "86"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "Bayangan",
-                        "=",
-                        "377",
-                        "=",
-                        "512"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                      },
-                      "parameters": [
-                        "Chaya",
-                        "Tween",
-                        "\"cahaya\"",
-                        "255",
-                        "\"linear\"",
-                        "1",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                      },
-                      "parameters": [
-                        "Penyihir_Unggu",
-                        "Tween",
-                        "\"karakter\"",
-                        "255",
-                        "\"linear\"",
-                        "1",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                      },
-                      "parameters": [
-                        "Bayangan",
-                        "Tween",
-                        "\"bayangan\"",
-                        "255",
-                        "\"linear\"",
-                        "1",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Text_Restart_Game",
-                        "960",
-                        "313",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Text_Exit_Game",
-                        "1000",
-                        "379",
-                        ""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "PlayerHealt",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "EnemyHealt",
-                    "=",
-                    "3"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "badget",
+                    "Background",
                     "Animation",
                     "=",
                     "\"lose\""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
-                  },
-                  "parameters": [
-                    "badget",
-                    "Tween",
-                    "\"badgePositon\"",
-                    "387",
-                    "16",
-                    "\"linear\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectHeightTween2"
-                  },
-                  "parameters": [
-                    "badget",
-                    "Tween",
-                    "\"badgeHeight\"",
-                    "209.05",
-                    "\"linear\"",
-                    "1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
-                  },
-                  "parameters": [
-                    "badget",
-                    "Tween",
-                    "\"badgewidth\"",
-                    "507",
-                    "\"linear\"",
-                    "1",
-                    ""
-                  ]
                 }
               ],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "Tween::Exists"
+                        "value": "NumberVariable"
                       },
                       "parameters": [
-                        "badget",
-                        "Tween",
-                        "\"badgePositon\""
+                        "PlayerHealt",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "EnemyHealt",
+                        "=",
+                        "2"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "Wait"
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
                       },
                       "parameters": [
-                        "1"
+                        "badget",
+                        "Animation",
+                        "=",
+                        "\"lose1\""
                       ]
                     },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "badget",
+                        "Tween",
+                        "\"badgePositon\"",
+                        "387",
+                        "16",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectHeightTween2"
+                      },
+                      "parameters": [
+                        "badget",
+                        "Tween",
+                        "\"badgeHeight\"",
+                        "209.05",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                      },
+                      "parameters": [
+                        "badget",
+                        "Tween",
+                        "\"badgewidth\"",
+                        "507",
+                        "\"linear\"",
+                        "1",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Tween::Exists"
+                          },
+                          "parameters": [
+                            "badget",
+                            "Tween",
+                            "\"badgePositon\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Penyihir_Unggu",
+                            "Animation",
+                            "=",
+                            "\"lose\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResizableCapability::ResizableBehavior::SetSize"
+                          },
+                          "parameters": [
+                            "Penyihir_Unggu",
+                            "Resizable",
+                            "152",
+                            "187"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Penyihir_Unggu",
+                            "=",
+                            "564",
+                            "=",
+                            "381"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Bayangan",
+                            "Animation",
+                            "=",
+                            "\"lose\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResizableCapability::ResizableBehavior::SetSize"
+                          },
+                          "parameters": [
+                            "Bayangan",
+                            "Resizable",
+                            "526",
+                            "86"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Bayangan",
+                            "=",
+                            "377",
+                            "=",
+                            "512"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Chaya",
+                            "Tween",
+                            "\"cahaya\"",
+                            "255",
+                            "\"linear\"",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Penyihir_Unggu",
+                            "Tween",
+                            "\"karakter\"",
+                            "255",
+                            "\"linear\"",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Bayangan",
+                            "Tween",
+                            "\"bayangan\"",
+                            "255",
+                            "\"linear\"",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Text_Restart_Game",
+                            "960",
+                            "313",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Text_Exit_Game",
+                            "1000",
+                            "379",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "PlayerHealt",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "EnemyHealt",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
                     {
                       "type": {
                         "value": "AnimatableCapability::AnimatableBehavior::SetName"
                       },
                       "parameters": [
-                        "Penyihir_Unggu",
+                        "badget",
                         "Animation",
                         "=",
                         "\"lose\""
@@ -14892,70 +15369,14 @@
                     },
                     {
                       "type": {
-                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
                       },
                       "parameters": [
-                        "Penyihir_Unggu",
-                        "Resizable",
-                        "152",
-                        "187"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "Penyihir_Unggu",
-                        "=",
-                        "564",
-                        "=",
-                        "381"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Bayangan",
-                        "Animation",
-                        "=",
-                        "\"lose\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ResizableCapability::ResizableBehavior::SetSize"
-                      },
-                      "parameters": [
-                        "Bayangan",
-                        "Resizable",
-                        "526",
-                        "86"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "Bayangan",
-                        "=",
-                        "377",
-                        "=",
-                        "512"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                      },
-                      "parameters": [
-                        "Chaya",
+                        "badget",
                         "Tween",
-                        "\"cahaya\"",
-                        "255",
+                        "\"badgePositon\"",
+                        "387",
+                        "16",
                         "\"linear\"",
                         "1",
                         ""
@@ -14963,13 +15384,13 @@
                     },
                     {
                       "type": {
-                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                        "value": "Tween::TweenBehavior::AddObjectHeightTween2"
                       },
                       "parameters": [
-                        "Penyihir_Unggu",
+                        "badget",
                         "Tween",
-                        "\"karakter\"",
-                        "255",
+                        "\"badgeHeight\"",
+                        "209.05",
                         "\"linear\"",
                         "1",
                         ""
@@ -14977,40 +15398,177 @@
                     },
                     {
                       "type": {
-                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                        "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                       },
                       "parameters": [
-                        "Bayangan",
+                        "badget",
                         "Tween",
-                        "\"bayangan\"",
-                        "255",
+                        "\"badgewidth\"",
+                        "507",
                         "\"linear\"",
                         "1",
                         ""
                       ]
-                    },
+                    }
+                  ],
+                  "events": [
                     {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Text_Restart_Game",
-                        "960",
-                        "313",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Text_Exit_Game",
-                        "1000",
-                        "379",
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Tween::Exists"
+                          },
+                          "parameters": [
+                            "badget",
+                            "Tween",
+                            "\"badgePositon\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Penyihir_Unggu",
+                            "Animation",
+                            "=",
+                            "\"lose\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResizableCapability::ResizableBehavior::SetSize"
+                          },
+                          "parameters": [
+                            "Penyihir_Unggu",
+                            "Resizable",
+                            "152",
+                            "187"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Penyihir_Unggu",
+                            "=",
+                            "564",
+                            "=",
+                            "381"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Bayangan",
+                            "Animation",
+                            "=",
+                            "\"lose\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResizableCapability::ResizableBehavior::SetSize"
+                          },
+                          "parameters": [
+                            "Bayangan",
+                            "Resizable",
+                            "526",
+                            "86"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Bayangan",
+                            "=",
+                            "377",
+                            "=",
+                            "512"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Chaya",
+                            "Tween",
+                            "\"cahaya\"",
+                            "255",
+                            "\"linear\"",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Penyihir_Unggu",
+                            "Tween",
+                            "\"karakter\"",
+                            "255",
+                            "\"linear\"",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "Bayangan",
+                            "Tween",
+                            "\"bayangan\"",
+                            "255",
+                            "\"linear\"",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Text_Restart_Game",
+                            "960",
+                            "313",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Text_Exit_Game",
+                            "1000",
+                            "379",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -15041,6 +15599,12 @@
                 "",
                 "\"Left\""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -15049,6 +15613,182 @@
                 "value": "Quit"
               },
               "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Text_Menu",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "EnemyHealt",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerHealt",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Win",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Lose",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "Scene",
+                "=",
+                "\"Home\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Loading\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Text_Restart_Game",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "EnemyHealt",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerHealt",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Lose",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Win",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Game\"",
                 ""
               ]
             }
