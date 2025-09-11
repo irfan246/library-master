@@ -806,6 +806,262 @@
         "name": "win6.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "book close.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "book close.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "book open.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "book open.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "text new item.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "text new item.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "button claim.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "button claim.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group (1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group (2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group (3).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "attack6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "attack6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "attack7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "attack7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "attack8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "attack8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "attack9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "attack9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../../asset/Library magic/penyihir unggu/bulat1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\asset\\Library magic\\penyihir unggu\\bulat1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../../asset/Library magic/penyihir unggu/bulat2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\asset\\Library magic\\penyihir unggu\\bulat2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../../asset/Library magic/penyihir unggu/bulat3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\asset\\Library magic\\penyihir unggu\\bulat3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "bulat1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bulat1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "bulat2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bulat2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "bulat3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bulat3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "attack10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "attack10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "attack11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "attack11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "attack12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "attack12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "duar1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duar1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "duar2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duar2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "duar3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duar3.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -989,6 +1245,11 @@
       "name": "EnemyHealt",
       "type": "number",
       "value": 3
+    },
+    {
+      "name": "EnemyName",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -1012,7 +1273,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.689778214010451,
+        "zoomFactor": 0.36732575450588284,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2256,6 +2517,16 @@
               "parameters": [
                 "",
                 "\"Setting\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "selectedCharacter",
+                "=",
+                "\"penyihir_unggu\""
               ]
             }
           ]
@@ -3890,17 +4161,6 @@
                         "=",
                         "0.4"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetStringObjectVariable"
-                      },
-                      "parameters": [
-                        "Karakter",
-                        "name",
-                        "=",
-                        "Character[TempIndex].name"
-                      ]
                     }
                   ],
                   "events": [
@@ -3926,7 +4186,7 @@
                           "parameters": [
                             "selectedCharacter",
                             "=",
-                            "Karakter.name"
+                            "Character[TempIndex].name"
                           ]
                         }
                       ]
@@ -6291,7 +6551,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5843784410741014,
+        "zoomFactor": 0.6244537826600083,
         "windowMask": false
       },
       "objectsGroups": [
@@ -8098,7 +8358,21 @@
               ]
             }
           ],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "Glow",
+              "name": "Effect",
+              "doubleParameters": {
+                "distance": 15,
+                "innerStrength": 0,
+                "outerStrength": 0
+              },
+              "stringParameters": {
+                "color": "243;255;17"
+              },
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [
             {
               "name": "Draggable",
@@ -8108,6 +8382,12 @@
             {
               "name": "ObjectStack",
               "type": "ObjectStack::ObjectStack"
+            },
+            {
+              "name": "Sticker",
+              "type": "Sticker::Sticker",
+              "OnlyFollowPosition": false,
+              "IsDestroyedWithParent": false
             },
             {
               "name": "Tween",
@@ -9092,6 +9372,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -9129,6 +9410,7 @@
           ],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Repeat",
               "repeatExpression": "VariableChildCount(BukuList)",
               "conditions": [],
@@ -10151,6 +10433,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -10389,6 +10672,41 @@
                         "=",
                         "14"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sticker::Sticker::Stick"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Sticker",
+                        "Rak",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"innerStrength\"",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"outerStrength\"",
+                        "7.5"
+                      ]
                     }
                   ]
                 },
@@ -10450,6 +10768,41 @@
                         "Book",
                         "=",
                         "14"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sticker::Sticker::Stick"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Sticker",
+                        "Rak",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"innerStrength\"",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"outerStrength\"",
+                        "7.5"
                       ]
                     }
                   ]
@@ -10513,6 +10866,41 @@
                         "=",
                         "14"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sticker::Sticker::Stick"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Sticker",
+                        "Rak",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"innerStrength\"",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"outerStrength\"",
+                        "7.5"
+                      ]
                     }
                   ]
                 },
@@ -10574,6 +10962,41 @@
                         "Book",
                         "=",
                         "14"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sticker::Sticker::Stick"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Sticker",
+                        "Rak",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"innerStrength\"",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"outerStrength\"",
+                        "7.5"
                       ]
                     }
                   ]
@@ -10798,6 +11221,41 @@
                         "=",
                         "14"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sticker::Sticker::Stick"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Sticker",
+                        "Rak",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"innerStrength\"",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"outerStrength\"",
+                        "7.5"
+                      ]
                     }
                   ]
                 },
@@ -10859,6 +11317,41 @@
                         "Book",
                         "=",
                         "14"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sticker::Sticker::Stick"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Sticker",
+                        "Rak",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"innerStrength\"",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"outerStrength\"",
+                        "7.5"
                       ]
                     }
                   ]
@@ -10922,6 +11415,41 @@
                         "=",
                         "14"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sticker::Sticker::Stick"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Sticker",
+                        "Rak",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"innerStrength\"",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"outerStrength\"",
+                        "7.5"
+                      ]
                     }
                   ]
                 },
@@ -10984,6 +11512,41 @@
                         "=",
                         "14"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sticker::Sticker::Stick"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Sticker",
+                        "Rak",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"innerStrength\"",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"outerStrength\"",
+                        "7.5"
+                      ]
                     }
                   ]
                 }
@@ -10999,7 +11562,7 @@
                   },
                   "parameters": [
                     "Book",
-                    "Level_1",
+                    "Rak",
                     "",
                     "",
                     ""
@@ -11011,7 +11574,7 @@
                   },
                   "parameters": [
                     "Book",
-                    "Rak",
+                    "Level_1",
                     "",
                     "",
                     ""
@@ -11195,6 +11758,41 @@
                         "=",
                         "14"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sticker::Sticker::Stick"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Sticker",
+                        "Rak",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"innerStrength\"",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"outerStrength\"",
+                        "7.5"
+                      ]
                     }
                   ]
                 },
@@ -11256,6 +11854,41 @@
                         "Book",
                         "=",
                         "14"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sticker::Sticker::Stick"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Sticker",
+                        "Rak",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"innerStrength\"",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"outerStrength\"",
+                        "7.5"
                       ]
                     }
                   ]
@@ -11319,6 +11952,41 @@
                         "=",
                         "14"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sticker::Sticker::Stick"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Sticker",
+                        "Rak",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"innerStrength\"",
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Effect",
+                        "\"Effect\"",
+                        "\"outerStrength\"",
+                        "7.5"
+                      ]
                     }
                   ]
                 }
@@ -11329,26 +11997,90 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "Book",
-                    "Level_1",
-                    "",
-                    "",
-                    ""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Level_1",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Level_2",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Level_3",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
                   ]
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "NumberObjectVariable"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "Book",
-                    "laci",
-                    "=",
-                    "Level_1.laci"
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "Level_1.laci"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "Level_2.laci"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Book",
+                        "laci",
+                        "=",
+                        "Level_3.laci"
+                      ]
+                    }
                   ]
                 },
                 {
@@ -11624,6 +12356,10 @@
           "type": "ScalableCapability::ScalableBehavior"
         },
         {
+          "name": "Sticker",
+          "type": "Sticker::Sticker"
+        },
+        {
           "name": "Text",
           "type": "TextContainerCapability::TextContainerBehavior"
         },
@@ -11653,17 +12389,46 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4518775681027361,
+        "zoomFactor": 0.4828663018134474,
         "windowMask": false
       },
-      "objectsGroups": [],
-      "variables": [
+      "objectsGroups": [
         {
-          "name": "PlayerHealth",
-          "type": "number",
-          "value": 3
+          "name": "player",
+          "objects": [
+            {
+              "name": "Player_Penyihir_Pink"
+            },
+            {
+              "name": "Player_Penyihir_Hijau"
+            },
+            {
+              "name": "Player_Penyihir_Unggu"
+            },
+            {
+              "name": "Player_Plague_Doctor"
+            },
+            {
+              "name": "Player_Shadow_Master"
+            }
+          ]
+        },
+        {
+          "name": "enemy",
+          "objects": [
+            {
+              "name": "Enemy_Plague_Doctor"
+            },
+            {
+              "name": "Enemy_Penyihir_Hijau"
+            },
+            {
+              "name": "Enemy_Shadow_Master"
+            }
+          ]
         }
       ],
+      "variables": [],
       "instances": [
         {
           "angle": 0,
@@ -11734,22 +12499,6 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 348,
-          "layer": "",
-          "name": "Player_Penyihir_Unggu",
-          "persistentUuid": "447b5fb5-2e15-4e93-9463-a94cfeb64a4a",
-          "width": 469.8,
-          "x": 195,
-          "y": 308,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
           "height": 59,
           "layer": "",
           "name": "Health_Enemy",
@@ -11758,23 +12507,6 @@
           "x": 703,
           "y": 38,
           "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "flippedX": true,
-          "height": 325,
-          "layer": "",
-          "name": "Enemy_Penyihir_Pink",
-          "persistentUuid": "1156c5ad-dc07-4e04-b076-c6cd39acf781",
-          "width": 389,
-          "x": 789,
-          "y": 345,
-          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11852,7 +12584,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "penyihir_unggu",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -11862,6 +12594,198 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Group-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 513,
+                            "y": 0
+                          },
+                          {
+                            "x": 513,
+                            "y": 363
+                          },
+                          {
+                            "x": 0,
+                            "y": 363
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "penyihir_pink",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group (1).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 513,
+                            "y": 0
+                          },
+                          {
+                            "x": 513,
+                            "y": 363
+                          },
+                          {
+                            "x": 0,
+                            "y": 363
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "penyihir_hijau",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group (2).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 513,
+                            "y": 0
+                          },
+                          {
+                            "x": 513,
+                            "y": 363
+                          },
+                          {
+                            "x": 0,
+                            "y": 363
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "shadow_master",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group (3).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 513,
+                            "y": 0
+                          },
+                          {
+                            "x": 513,
+                            "y": 363
+                          },
+                          {
+                            "x": 0,
+                            "y": 363
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "plague_doctor",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group10.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -11912,7 +12836,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "penyihir_hijau",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -11922,6 +12846,102 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Group-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 1
+                          },
+                          {
+                            "x": 482,
+                            "y": 1
+                          },
+                          {
+                            "x": 482,
+                            "y": 385
+                          },
+                          {
+                            "x": 0,
+                            "y": 385
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "plague_doctor",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 1
+                          },
+                          {
+                            "x": 482,
+                            "y": 1
+                          },
+                          {
+                            "x": 482,
+                            "y": 385
+                          },
+                          {
+                            "x": 0,
+                            "y": 385
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "shadow_master",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group6.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -12567,7 +13587,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Enemy_Penyihir_Pink",
+          "name": "Player_Penyihir_Pink",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -12704,7 +13724,829 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "EffectNewSprite",
+          "name": "Enemy_Penyihir_Hijau",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Health",
+              "type": "Health::Health",
+              "Health": 3,
+              "CurrentHealth": 0,
+              "MaxHealth": 3,
+              "DamageCooldown": 0,
+              "AllowOverHealing": false,
+              "IsHealthJustDamaged": false,
+              "DamageToBeApplied": 0,
+              "HitAtLeastOnce": false,
+              "ChanceToDodge": 0,
+              "IsJustDodged": false,
+              "HealToBeApplied": 0,
+              "HealthRegenRate": 0,
+              "HealthRegenDelay": 0,
+              "IsJustHealed": false,
+              "CurrentShieldPoints": 2.0247e-320,
+              "MaxShieldPoints": 0,
+              "ShieldDuration": 5,
+              "ShieldRegenRate": 0,
+              "BlockExcessDamage": false,
+              "ShieldRegenDelay": 0,
+              "IsShieldJustDamaged": false,
+              "ShieldDamageTaken": 2.0247e-320,
+              "FlatDamageReduction": 0,
+              "PercentDamageReduction": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "attack",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 130
+                          },
+                          {
+                            "x": 1316,
+                            "y": 130
+                          },
+                          {
+                            "x": 1316,
+                            "y": 1560
+                          },
+                          {
+                            "x": 0,
+                            "y": 1560
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hurt",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 130
+                          },
+                          {
+                            "x": 1316,
+                            "y": 130
+                          },
+                          {
+                            "x": 1316,
+                            "y": 1560
+                          },
+                          {
+                            "x": 0,
+                            "y": 1560
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Enemy_Plague_Doctor",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Health",
+              "type": "Health::Health",
+              "Health": 3,
+              "CurrentHealth": 0,
+              "MaxHealth": 3,
+              "DamageCooldown": 0,
+              "AllowOverHealing": false,
+              "IsHealthJustDamaged": false,
+              "DamageToBeApplied": 0,
+              "HitAtLeastOnce": false,
+              "ChanceToDodge": 0,
+              "IsJustDodged": false,
+              "HealToBeApplied": 0,
+              "HealthRegenRate": 0,
+              "HealthRegenDelay": 0,
+              "IsJustHealed": false,
+              "CurrentShieldPoints": 2.0247e-320,
+              "MaxShieldPoints": 0,
+              "ShieldDuration": 5,
+              "ShieldRegenRate": 0,
+              "BlockExcessDamage": false,
+              "ShieldRegenDelay": 0,
+              "IsShieldJustDamaged": false,
+              "ShieldDamageTaken": 2.0247e-320,
+              "FlatDamageReduction": 0,
+              "PercentDamageReduction": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "attack",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 1262,
+                            "y": 1
+                          },
+                          {
+                            "x": 1262,
+                            "y": 1551
+                          },
+                          {
+                            "x": 1,
+                            "y": 1551
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hurt",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 1262,
+                            "y": 1
+                          },
+                          {
+                            "x": 1262,
+                            "y": 1551
+                          },
+                          {
+                            "x": 1,
+                            "y": 1551
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Enemy_Shadow_Master",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Health",
+              "type": "Health::Health",
+              "Health": 3,
+              "CurrentHealth": 0,
+              "MaxHealth": 3,
+              "DamageCooldown": 0,
+              "AllowOverHealing": false,
+              "IsHealthJustDamaged": false,
+              "DamageToBeApplied": 0,
+              "HitAtLeastOnce": false,
+              "ChanceToDodge": 0,
+              "IsJustDodged": false,
+              "HealToBeApplied": 0,
+              "HealthRegenRate": 0,
+              "HealthRegenDelay": 0,
+              "IsJustHealed": false,
+              "CurrentShieldPoints": 2.0247e-320,
+              "MaxShieldPoints": 0,
+              "ShieldDuration": 5,
+              "ShieldRegenRate": 0,
+              "BlockExcessDamage": false,
+              "ShieldRegenDelay": 0,
+              "IsShieldJustDamaged": false,
+              "ShieldDamageTaken": 2.0247e-320,
+              "FlatDamageReduction": 0,
+              "PercentDamageReduction": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "attack",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 927,
+                            "y": 0
+                          },
+                          {
+                            "x": 927,
+                            "y": 1251
+                          },
+                          {
+                            "x": 0,
+                            "y": 1251
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hurt",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group9.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 927,
+                            "y": 0
+                          },
+                          {
+                            "x": 927,
+                            "y": 1251
+                          },
+                          {
+                            "x": 0,
+                            "y": 1251
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Player_Plague_Doctor",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Health",
+              "type": "Health::Health",
+              "Health": 3,
+              "CurrentHealth": 0,
+              "MaxHealth": 3,
+              "DamageCooldown": 0,
+              "AllowOverHealing": false,
+              "IsHealthJustDamaged": false,
+              "DamageToBeApplied": 0,
+              "HitAtLeastOnce": false,
+              "ChanceToDodge": 0,
+              "IsJustDodged": false,
+              "HealToBeApplied": 0,
+              "HealthRegenRate": 0,
+              "HealthRegenDelay": 0,
+              "IsJustHealed": false,
+              "CurrentShieldPoints": 2.0247e-320,
+              "MaxShieldPoints": 0,
+              "ShieldDuration": 5,
+              "ShieldRegenRate": 0,
+              "BlockExcessDamage": false,
+              "ShieldRegenDelay": 0,
+              "IsShieldJustDamaged": false,
+              "ShieldDamageTaken": 2.0247e-320,
+              "FlatDamageReduction": 0,
+              "PercentDamageReduction": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "attack",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 1262,
+                            "y": 1
+                          },
+                          {
+                            "x": 1262,
+                            "y": 1551
+                          },
+                          {
+                            "x": 1,
+                            "y": 1551
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hurt",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Karakter5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 1262,
+                            "y": 1
+                          },
+                          {
+                            "x": 1262,
+                            "y": 1551
+                          },
+                          {
+                            "x": 1,
+                            "y": 1551
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Player_Penyihir_Hijau",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Health",
+              "type": "Health::Health",
+              "Health": 3,
+              "CurrentHealth": 0,
+              "MaxHealth": 3,
+              "DamageCooldown": 0,
+              "AllowOverHealing": false,
+              "IsHealthJustDamaged": false,
+              "DamageToBeApplied": 0,
+              "HitAtLeastOnce": false,
+              "ChanceToDodge": 0,
+              "IsJustDodged": false,
+              "HealToBeApplied": 0,
+              "HealthRegenRate": 0,
+              "HealthRegenDelay": 0,
+              "IsJustHealed": false,
+              "CurrentShieldPoints": 2.0247e-320,
+              "MaxShieldPoints": 0,
+              "ShieldDuration": 5,
+              "ShieldRegenRate": 0,
+              "BlockExcessDamage": false,
+              "ShieldRegenDelay": 0,
+              "IsShieldJustDamaged": false,
+              "ShieldDamageTaken": 2.0247e-320,
+              "FlatDamageReduction": 0,
+              "PercentDamageReduction": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "attack",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 130
+                          },
+                          {
+                            "x": 1316,
+                            "y": 130
+                          },
+                          {
+                            "x": 1316,
+                            "y": 1560
+                          },
+                          {
+                            "x": 0,
+                            "y": 1560
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hurt",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 130
+                          },
+                          {
+                            "x": 1316,
+                            "y": 130
+                          },
+                          {
+                            "x": 1316,
+                            "y": 1560
+                          },
+                          {
+                            "x": 0,
+                            "y": 1560
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Player_Shadow_Master",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Health",
+              "type": "Health::Health",
+              "Health": 3,
+              "CurrentHealth": 0,
+              "MaxHealth": 3,
+              "DamageCooldown": 0,
+              "AllowOverHealing": false,
+              "IsHealthJustDamaged": false,
+              "DamageToBeApplied": 0,
+              "HitAtLeastOnce": false,
+              "ChanceToDodge": 0,
+              "IsJustDodged": false,
+              "HealToBeApplied": 0,
+              "HealthRegenRate": 0,
+              "HealthRegenDelay": 0,
+              "IsJustHealed": false,
+              "CurrentShieldPoints": 2.0247e-320,
+              "MaxShieldPoints": 0,
+              "ShieldDuration": 5,
+              "ShieldRegenRate": 0,
+              "BlockExcessDamage": false,
+              "ShieldRegenDelay": 0,
+              "IsShieldJustDamaged": false,
+              "ShieldDamageTaken": 2.0247e-320,
+              "FlatDamageReduction": 0,
+              "PercentDamageReduction": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "attack",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 927,
+                            "y": 0
+                          },
+                          {
+                            "x": 927,
+                            "y": 1251
+                          },
+                          {
+                            "x": 0,
+                            "y": 1251
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hurt",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group9.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 927,
+                            "y": 0
+                          },
+                          {
+                            "x": 927,
+                            "y": 1251
+                          },
+                          {
+                            "x": 0,
+                            "y": 1251
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Effect",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -12712,16 +14554,16 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "penyihir_unggu",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
+                  "looping": false,
                   "timeBetweenFrames": 0.2,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "attack1.png",
+                      "image": "attack6.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -12738,26 +14580,26 @@
                         [
                           {
                             "x": 0,
-                            "y": 0
+                            "y": 9
                           },
                           {
-                            "x": 818,
-                            "y": 0
+                            "x": 47,
+                            "y": 9
                           },
                           {
-                            "x": 818,
-                            "y": 700
+                            "x": 47,
+                            "y": 40
                           },
                           {
                             "x": 0,
-                            "y": 700
+                            "y": 40
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "attack2.png",
+                      "image": "attack7.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -12774,26 +14616,26 @@
                         [
                           {
                             "x": 0,
-                            "y": 0
+                            "y": 9
                           },
                           {
-                            "x": 818,
-                            "y": 0
+                            "x": 47,
+                            "y": 9
                           },
                           {
-                            "x": 818,
-                            "y": 700
+                            "x": 47,
+                            "y": 40
                           },
                           {
                             "x": 0,
-                            "y": 700
+                            "y": 40
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "attack3.png",
+                      "image": "attack8.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -12810,26 +14652,26 @@
                         [
                           {
                             "x": 0,
-                            "y": 0
+                            "y": 9
                           },
                           {
-                            "x": 818,
-                            "y": 0
+                            "x": 47,
+                            "y": 9
                           },
                           {
-                            "x": 818,
-                            "y": 700
+                            "x": 47,
+                            "y": 40
                           },
                           {
                             "x": 0,
-                            "y": 700
+                            "y": 40
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "attack4.png",
+                      "image": "attack9.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -12846,26 +14688,170 @@
                         [
                           {
                             "x": 0,
-                            "y": 0
+                            "y": 9
                           },
                           {
-                            "x": 818,
-                            "y": 0
+                            "x": 47,
+                            "y": 9
                           },
                           {
-                            "x": 818,
-                            "y": 700
+                            "x": 47,
+                            "y": 40
                           },
                           {
                             "x": 0,
-                            "y": 700
+                            "y": 40
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "penyihir_hijau",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.2,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "attack10.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 196,
+                        "y": 25.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 107.5,
+                        "y": 48
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 9
+                          },
+                          {
+                            "x": 47,
+                            "y": 9
+                          },
+                          {
+                            "x": 47,
+                            "y": 40
+                          },
+                          {
+                            "x": 0,
+                            "y": 40
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "attack5.png",
+                      "image": "attack11.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 382,
+                        "y": 49
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 337,
+                        "y": 87.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 9
+                          },
+                          {
+                            "x": 47,
+                            "y": 9
+                          },
+                          {
+                            "x": 47,
+                            "y": 40
+                          },
+                          {
+                            "x": 0,
+                            "y": 40
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "attack12.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 572,
+                        "y": 85.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 253.5,
+                        "y": 226.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 9
+                          },
+                          {
+                            "x": 47,
+                            "y": 9
+                          },
+                          {
+                            "x": 47,
+                            "y": 40
+                          },
+                          {
+                            "x": 0,
+                            "y": 40
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Effect_Tambahan",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "penyihir_unggu",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bulat1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -12885,16 +14871,208 @@
                             "y": 0
                           },
                           {
-                            "x": 818,
+                            "x": 256,
                             "y": 0
                           },
                           {
-                            "x": 818,
-                            "y": 700
+                            "x": 256,
+                            "y": 283
                           },
                           {
                             "x": 0,
-                            "y": 700
+                            "y": 283
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bulat2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 256,
+                            "y": 0
+                          },
+                          {
+                            "x": 256,
+                            "y": 283
+                          },
+                          {
+                            "x": 0,
+                            "y": 283
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bulat3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 256,
+                            "y": 0
+                          },
+                          {
+                            "x": 256,
+                            "y": 283
+                          },
+                          {
+                            "x": 0,
+                            "y": 283
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "penyihir_hijau",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "duar3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 469,
+                        "y": 467.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 256,
+                            "y": 0
+                          },
+                          {
+                            "x": 256,
+                            "y": 283
+                          },
+                          {
+                            "x": 0,
+                            "y": 283
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "duar2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 399,
+                        "y": 430
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 256,
+                            "y": 0
+                          },
+                          {
+                            "x": 256,
+                            "y": 283
+                          },
+                          {
+                            "x": 0,
+                            "y": 283
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "duar1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 224.5,
+                        "y": 273
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 256,
+                            "y": 0
+                          },
+                          {
+                            "x": 256,
+                            "y": 283
+                          },
+                          {
+                            "x": 0,
+                            "y": 283
                           }
                         ]
                       ]
@@ -12919,24 +15097,46 @@
             "objectName": "Head_Enemy"
           },
           {
-            "objectName": "Player_Penyihir_Unggu"
-          },
-          {
-            "objectName": "EffectNewSprite"
-          },
-          {
             "objectName": "Health_Player"
           },
           {
             "objectName": "Health_Enemy"
           },
           {
-            "objectName": "Enemy_Penyihir_Pink"
+            "objectName": "Player_Penyihir_Unggu"
+          },
+          {
+            "objectName": "Player_Penyihir_Pink"
+          },
+          {
+            "objectName": "Player_Plague_Doctor"
+          },
+          {
+            "objectName": "Player_Penyihir_Hijau"
+          },
+          {
+            "objectName": "Player_Shadow_Master"
+          },
+          {
+            "objectName": "Enemy_Penyihir_Hijau"
+          },
+          {
+            "objectName": "Enemy_Shadow_Master"
+          },
+          {
+            "objectName": "Enemy_Plague_Doctor"
+          },
+          {
+            "objectName": "Effect"
+          },
+          {
+            "objectName": "Effect_Tambahan"
           }
         ]
       },
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -12971,6 +15171,358 @@
                 "EnemyHealt"
               ]
             }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level1",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Enemy_Penyihir_Hijau",
+                    "698",
+                    "194",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Enemy_Penyihir_Hijau",
+                    "Resizable",
+                    "426.55",
+                    "461.11"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Enemy_Penyihir_Hijau",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level2",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Enemy_Shadow_Master",
+                    "778",
+                    "266",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Enemy_Shadow_Master",
+                    "Resizable",
+                    "319.65",
+                    "388"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Enemy_Shadow_Master",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level3",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Enemy_Plague_Doctor",
+                    "748",
+                    "170",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Enemy_Plague_Doctor",
+                    "Resizable",
+                    "393",
+                    "483"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Enemy_Plague_Doctor",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "selectedCharacter",
+                    "=",
+                    "\"penyihir_unggu\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Player_Penyihir_Unggu",
+                    "175",
+                    "240",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Player_Penyihir_Unggu",
+                    "Resizable",
+                    "469.08",
+                    "400"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "selectedCharacter",
+                    "=",
+                    "\"penyihir_pink\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Player_Penyihir_Pink",
+                    "135",
+                    "240",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Player_Penyihir_Pink",
+                    "Resizable",
+                    "417.23",
+                    "392.15"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "selectedCharacter",
+                    "=",
+                    "\"penyihir_hijau\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Player_Penyihir_Hijau",
+                    "135",
+                    "180",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Player_Penyihir_Hijau",
+                    "Resizable",
+                    "421.76",
+                    "455.93"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "selectedCharacter",
+                    "=",
+                    "\"shadow_master\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Player_Shadow_Master",
+                    "135",
+                    "243",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Player_Shadow_Master",
+                    "Resizable",
+                    "319.65",
+                    "388"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "selectedCharacter",
+                    "=",
+                    "\"plague_doctor\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Player_Plague_Doctor",
+                    "135",
+                    "148",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Player_Plague_Doctor",
+                    "Resizable",
+                    "393",
+                    "483"
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -12987,65 +15539,385 @@
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "Enemy_Penyihir_Pink",
-                "Health",
-                "1",
-                "",
-                "",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "selectedCharacter",
+                    "=",
+                    "\"penyihir_unggu\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Effect",
+                    "500",
+                    "340",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Effect",
+                    "Animation",
+                    "=",
+                    "\"penyihir_unggu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Effect",
+                    "Resizable",
+                    "70",
+                    "40"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Effect",
+                    "=",
+                    "4"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Effect_Tambahan",
+                        "760",
+                        "200",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Effect_Tambahan",
+                        "Animation",
+                        "=",
+                        "\"penyihir_unggu\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "Effect_Tambahan",
+                        "Resizable",
+                        "280",
+                        "330"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Effect_Tambahan",
+                        "=",
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "enemy",
+                        "Animation",
+                        "=",
+                        "\"hurt\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Health::Health::Hit"
+                      },
+                      "parameters": [
+                        "enemy",
+                        "Health",
+                        "1",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "EnemyHealt",
+                        "-",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "playerAttack",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Health_Enemy",
+                        "Animation",
+                        "=",
+                        "EnemyHealt"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "EnemyHealt",
+                            ">",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PopScene"
+                          },
+                          "parameters": [
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "EnemyHealt",
-                "-",
-                "1"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "selectedCharacter",
+                    "=",
+                    "\"penyihir_pink\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Player_Penyihir_Pink",
+                    "135",
+                    "240",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Player_Penyihir_Pink",
+                    "Resizable",
+                    "417.23",
+                    "392.15"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "playerAttack",
-                "=",
-                "0"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "selectedCharacter",
+                    "=",
+                    "\"penyihir_hijau\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Player_Penyihir_Hijau",
+                    "135",
+                    "180",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Player_Penyihir_Hijau",
+                    "Resizable",
+                    "421.76",
+                    "455.93"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Health_Enemy",
-                "Animation",
-                "=",
-                "EnemyHealt"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "selectedCharacter",
+                    "=",
+                    "\"shadow_master\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Player_Shadow_Master",
+                    "135",
+                    "243",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Player_Shadow_Master",
+                    "Resizable",
+                    "319.65",
+                    "388"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "PopScene"
-              },
-              "parameters": [
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "selectedCharacter",
+                    "=",
+                    "\"plague_doctor\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Player_Plague_Doctor",
+                    "135",
+                    "148",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Player_Plague_Doctor",
+                    "Resizable",
+                    "393",
+                    "483"
+                  ]
+                }
               ]
             }
           ]
@@ -13064,70 +15936,341 @@
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "Player_Penyihir_Unggu",
-                "Health",
-                "1",
-                "",
-                "",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level1",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Effect",
+                    "800",
+                    "390",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Effect",
+                    "Resizable",
+                    "40",
+                    "40"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Effect",
+                    "Flippable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Effect",
+                    "Animation",
+                    "=",
+                    "\"penyihir_hijau\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Effect",
+                    "=",
+                    "4"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Effect_Tambahan",
+                        "280",
+                        "440",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "Effect_Tambahan",
+                        "Resizable",
+                        "200",
+                        "200"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Effect_Tambahan",
+                        "Animation",
+                        "=",
+                        "\"penyihir_hijau\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Effect_Tambahan",
+                        "=",
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "player",
+                        "Animation",
+                        "=",
+                        "\"hurt\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Health::Health::Hit"
+                      },
+                      "parameters": [
+                        "player",
+                        "Health",
+                        "1",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PlayerHealt",
+                        "-",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "enemyAttack",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Health_Player",
+                        "Animation",
+                        "=",
+                        "PlayerHealt"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "PlayerHealt",
+                            ">",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PopScene"
+                          },
+                          "parameters": [
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "PlayerHealt",
-                "-",
-                "1"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level2",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Enemy_Shadow_Master",
+                    "778",
+                    "266",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Enemy_Shadow_Master",
+                    "Resizable",
+                    "319.65",
+                    "388"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Enemy_Shadow_Master",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "enemyAttack",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Health_Player",
-                "Animation",
-                "=",
-                "PlayerHealt"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "PopScene"
-              },
-              "parameters": [
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level3",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Enemy_Plague_Doctor",
+                    "748",
+                    "170",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Enemy_Plague_Doctor",
+                    "Resizable",
+                    "393",
+                    "483"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Enemy_Plague_Doctor",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
               ]
             }
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -13190,6 +16333,14 @@
                 },
                 {
                   "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -13236,6 +16387,14 @@
                 },
                 {
                   "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -13272,6 +16431,14 @@
                 },
                 {
                   "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -13284,6 +16451,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -13346,6 +16514,14 @@
                 },
                 {
                   "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -13392,6 +16568,14 @@
                 },
                 {
                   "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -13428,6 +16612,14 @@
                 },
                 {
                   "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -13440,6 +16632,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -13492,6 +16685,14 @@
                 },
                 {
                   "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -13523,6 +16724,14 @@
                   "parameters": [
                     "Lose",
                     "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
                     "1"
                   ]
                 },
@@ -13564,6 +16773,14 @@
                 },
                 {
                   "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -13576,6 +16793,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -13628,6 +16846,14 @@
                 },
                 {
                   "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -13659,6 +16885,14 @@
                   "parameters": [
                     "Lose",
                     "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
                     "1"
                   ]
                 },
@@ -13700,6 +16934,14 @@
                 },
                 {
                   "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -13707,6 +16949,36 @@
                     "\"End\""
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Enemy_Penyihir_Hijau",
+                "Animation",
+                "=",
+                "\"hurt\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Enemy_Penyihir_Hijau",
+                "=",
+                "800",
+                "=",
+                "290"
               ]
             }
           ]
@@ -13806,6 +17078,795 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Reward",
+      "name": "Reward",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.463311182451398,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 720.5629397967161,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Background",
+          "persistentUuid": "f42a6d31-a322-4a8f-a5d3-f962339ab748",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 122,
+          "layer": "",
+          "name": "New_Item",
+          "persistentUuid": "bc317965-cd22-4fb5-be80-a761ab1aa195",
+          "width": 700,
+          "x": 290,
+          "y": 559,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 152.9,
+          "layer": "",
+          "name": "penyihir_hijau",
+          "opacity": 0,
+          "persistentUuid": "4c5ae762-5651-4016-8414-854456948002",
+          "width": 124,
+          "x": 715,
+          "y": 250,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Background",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "win6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 2558,
+                            "y": 0
+                          },
+                          {
+                            "x": 2558,
+                            "y": 1440
+                          },
+                          {
+                            "x": 0,
+                            "y": 1440
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Book_Level_1",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "close",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book close.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 252,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 1176
+                          },
+                          {
+                            "x": 252,
+                            "y": 1176
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "animation",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book close.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 252,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 1176
+                          },
+                          {
+                            "x": 252,
+                            "y": 1176
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book open.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 252,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 1176
+                          },
+                          {
+                            "x": 252,
+                            "y": 1176
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "open",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book open.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 252,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 1176
+                          },
+                          {
+                            "x": 252,
+                            "y": 1176
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "New_Item",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "text new item.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 0
+                          },
+                          {
+                            "x": 1014,
+                            "y": 0
+                          },
+                          {
+                            "x": 1014,
+                            "y": 261
+                          },
+                          {
+                            "x": 1,
+                            "y": 261
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "penyihir_hijau",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "penyihir hijau1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 1
+                          },
+                          {
+                            "x": 833,
+                            "y": 1
+                          },
+                          {
+                            "x": 833,
+                            "y": 1028
+                          },
+                          {
+                            "x": 0,
+                            "y": 1028
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Button_Claim",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "button claim.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 62,
+                            "y": 0
+                          },
+                          {
+                            "x": 428,
+                            "y": 0
+                          },
+                          {
+                            "x": 428,
+                            "y": 102
+                          },
+                          {
+                            "x": 62,
+                            "y": 102
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Background"
+          },
+          {
+            "objectName": "Book_Level_1"
+          },
+          {
+            "objectName": "penyihir_hijau"
+          },
+          {
+            "objectName": "Button_Claim"
+          },
+          {
+            "objectName": "New_Item"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Book_Level_1",
+                "273",
+                "-51",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "Book_Level_1",
+                "Resizable",
+                "752",
+                "809"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Book_Level_1",
+                "Animation",
+                "=",
+                "\"animation\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Book_Level_1",
+                "Animation",
+                "=",
+                "\"open\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "Book_Level_1",
+                    "Animation",
+                    "=",
+                    "\"open\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Book_Level_1",
+                    "=",
+                    "90",
+                    "=",
+                    "-78"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "penyihir_hijau",
+                    "715",
+                    "250",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "penyihir_hijau",
+                    "Resizable",
+                    "124",
+                    "152.9"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Button_Claim",
+                    "660",
+                    "420",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Button_Claim",
+                    "Resizable",
+                    "243",
+                    "96"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ]
     },
@@ -48512,6 +52573,654 @@
             }
           ],
           "propertyDescriptors": [],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
+    {
+      "author": "D8H",
+      "category": "Movement",
+      "extensionNamespace": "",
+      "fullName": "Stick objects to others",
+      "gdevelopVersion": ">=5.5.222",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXN0aWNrZXItb3V0bGluZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik01LjUgMkMzLjYgMiAyIDMuNiAyIDUuNVYxOC41QzIgMjAuNCAzLjYgMjIgNS41IDIySDE2TDIyIDE2VjUuNUMyMiAzLjYgMjAuNCAyIDE4LjUgMkg1LjVNNS44IDRIMTguM0MxOS4zIDQgMjAuMSA0LjggMjAuMSA1LjhWMTVIMTguNkMxNi43IDE1IDE1LjEgMTYuNiAxNS4xIDE4LjVWMjBINS44QzQuOCAyMCA0IDE5LjIgNCAxOC4yVjUuOEM0IDQuOCA0LjggNCA1LjggNCIgLz48L3N2Zz4=",
+      "name": "Sticker",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/sticker-outline.svg",
+      "shortDescription": "Make objects follow the position and rotation of the object they are stuck to.",
+      "version": "0.5.4",
+      "description": [
+        "This extension can be useful to:",
+        "- Stick accessories to moving objects",
+        "- Animate a skeleton",
+        "- Delete an object with another one",
+        "",
+        "An example allows to check it out ([open the project online](https://editor.gdevelop.io/?project=example://stick-objects))."
+      ],
+      "origin": {
+        "identifier": "Sticker",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "sticker",
+        "stick",
+        "follow",
+        "skeleton",
+        "joint",
+        "pin",
+        "bind",
+        "glue",
+        "tie",
+        "attach",
+        "hold",
+        "paste",
+        "wear"
+      ],
+      "authorIds": [
+        "IWykYNRvhCZBN3vEgKEbBPOR3Oc2"
+      ],
+      "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
+      "eventsFunctions": [
+        {
+          "description": "Define helper classes JavaScript code.",
+          "fullName": "Define helper classes",
+          "functionType": "Action",
+          "name": "DefineHelperClasses",
+          "private": true,
+          "sentence": "Define helper classes JavaScript code",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "if (gdjs._stickerExtension) {",
+                "    return;",
+                "}",
+                "",
+                "// Unstick from deleted objects.",
+                "gdjs.registerObjectDeletedFromSceneCallback(function (runtimeScene, deletedObject) {",
+                "    const extension = runtimeScene._stickerExtension;",
+                "    if (!extension) {",
+                "        return;",
+                "    }",
+                "    /** @type {Set<gdjs.RuntimeBehavior>} */",
+                "    const allStickers = runtimeScene._stickerExtension.allStickers;",
+                "    for (const behavior of allStickers) {",
+                "        /** @type {Sticker} */",
+                "        const sticker = behavior._sticker;",
+                "        if (sticker.isStuckTo(deletedObject)) {",
+                "            if (behavior._getIsDestroyedWithParent()) {",
+                "                behavior.owner.deleteFromScene(runtimeScene);",
+                "            }",
+                "            sticker.unstick();",
+                "        }",
+                "    }",
+                "});",
+                "",
+                "class Sticker {",
+                "    /** @type {gdjs.RuntimeBehavior} */",
+                "    behavior;",
+                "    /** @type {gdjs.RuntimeObject | null} */",
+                "    basisObject;",
+                "    followingDoneThisFrame = false;",
+                "    relativeX = 0;",
+                "    relativeY = 0;",
+                "    relativeAngle = 0;",
+                "    relativeRotatedX = 0;",
+                "    relativeRotatedY = 0;",
+                "    basisOldX = 0;",
+                "    basisOldY = 0;",
+                "    basisOldAngle = 0;",
+                "    basisOldWidth = 0;",
+                "    basisOldHeight = 0;",
+                "    basisOldCenterXInScene = 0;",
+                "    basisOldCenterYInScene = 0;",
+                "",
+                "    /**",
+                "     * @param {gdjs.RuntimeBehavior} behavior",
+                "     */",
+                "    constructor(behavior) {",
+                "        this.behavior = behavior;",
+                "    }",
+                "",
+                "    /**",
+                "     * @param {gdjs.RuntimeObject} basisObject",
+                "     */",
+                "    isStuckTo(basisObject) {",
+                "        return this.basisObject === basisObject;",
+                "    }",
+                "",
+                "    /**",
+                "     * @param {gdjs.RuntimeObject} basisObject",
+                "     */",
+                "    stickTo(basisObject) {",
+                "        this.basisObject = basisObject;",
+                "        this.updateOldCoordinates();",
+                "        this.updateRelativeCoordinates();",
+                "    }",
+                "",
+                "    unstick() {",
+                "        this.basisObject = null;",
+                "    }",
+                "",
+                "    onStepPreEvents() {",
+                "        this.followingDoneThisFrame = false;",
+                "    }",
+                "",
+                "    /**",
+                "     * Update the coordinates in the basisObject basis.",
+                "     * ",
+                "     * It uses the basisObject coordinates from the previous frame.",
+                "     * This way, the sticker can move relatively to it and still",
+                "     * follow basisObject.",
+                "     * ",
+                "     * @param {gdjs.RuntimeObject} basisObject",
+                "     */",
+                "    updateRelativeCoordinates() {",
+                "        const object = this.behavior.owner;",
+                "",
+                "        // Update relative coordinates",
+                "        this.relativeX = object.getX() - this.basisOldX;",
+                "        this.relativeY = object.getY() - this.basisOldY;",
+                "        if (!this.behavior._getOnlyFollowPosition()) {",
+                "            this.relativeAngle = object.getAngle() - this.basisOldAngle;",
+                "            this.relativeWidth = object.getWidth() / this.basisOldWidth;",
+                "            this.relativeHeight = object.getHeight() / this.basisOldHeight;",
+                "            const deltaX = object.getCenterXInScene() - this.basisOldCenterXInScene;",
+                "            const deltaY = object.getCenterYInScene() - this.basisOldCenterYInScene;",
+                "            const angle = this.basisOldAngle * Math.PI / 180;",
+                "            const cosA = Math.cos(angle);",
+                "            const sinA = Math.sin(angle);",
+                "            this.relativeRotatedX = (deltaX * cosA + deltaY * sinA) / this.basisOldWidth;",
+                "            this.relativeRotatedY = (-deltaX * sinA + deltaY * cosA) / this.basisOldHeight;",
+                "",
+                "            // Save initial values to avoid calculus and rounding errors",
+                "            this.basisOriginalWidth = this.basisObject.getWidth();",
+                "            this.basisOriginalHeight = this.basisObject.getHeight();",
+                "            this.basisOriginalAngle = this.basisObject.getAngle();",
+                "        }",
+                "    }",
+                "",
+                "    /**",
+                "     * Copy the coordinates to use it the next frame.",
+                "     */",
+                "    updateOldCoordinates() {",
+                "        const object = this.behavior.owner;",
+                "",
+                "        this.ownerOldX = object.getX();",
+                "        this.ownerOldY = object.getY();",
+                "",
+                "        this.basisOldX = this.basisObject.getX();",
+                "        this.basisOldY = this.basisObject.getY();",
+                "",
+                "        if (!this.behavior._getOnlyFollowPosition()) {",
+                "            this.ownerOldAngle = object.getAngle();",
+                "            this.ownerOldWidth = object.getWidth();",
+                "            this.ownerOldHeight = object.getHeight();",
+                "",
+                "            this.basisOldAngle = this.basisObject.getAngle();",
+                "            this.basisOldWidth = this.basisObject.getWidth();",
+                "            this.basisOldHeight = this.basisObject.getHeight();",
+                "            this.basisOldCenterXInScene = this.basisObject.getCenterXInScene();",
+                "            this.basisOldCenterYInScene = this.basisObject.getCenterYInScene();",
+                "        }",
+                "    }",
+                "",
+                "    /**",
+                "     * Follow the basisObject (called in doStepPostEvents).",
+                "     * ",
+                "     * This method is also called by children to ensure",
+                "     * parents are updated first.",
+                "     */",
+                "    followBasisObject() {",
+                "        if (this.followingDoneThisFrame) {",
+                "            return;",
+                "        }",
+                "        this.followingDoneThisFrame = true;",
+                "        const basisObject = this.basisObject;",
+                "        if (!basisObject) {",
+                "            return;",
+                "        }",
+                "        // If the behavior on the basis object has a different name,",
+                "        // the objects will still follow their basis objects",
+                "        // but frame delays could happen.",
+                "        const behaviorName = this.behavior.getName();",
+                "        if (basisObject.hasBehavior(behaviorName)) {",
+                "            const basisBehavior = basisObject.getBehavior(behaviorName);",
+                "            if (basisBehavior.type === this.behavior.type) {",
+                "                // Follow parents 1st to avoid frame delays",
+                "                basisBehavior._sticker.followBasisObject();",
+                "            }",
+                "        }",
+                "        if (this.behavior._getOnlyFollowPosition()) {",
+                "            this.followPosition();",
+                "        } else {",
+                "            this.followTransformation();",
+                "        }",
+                "        this.updateOldCoordinates();",
+                "    }",
+                "",
+                "    followPosition() {",
+                "        const object = this.behavior.owner;",
+                "        const basisObject = this.basisObject;",
+                "        if (!basisObject) {",
+                "            return;",
+                "        }",
+                "        if (object.getX() !== this.ownerOldX",
+                "            || object.getY() !== this.ownerOldY) {",
+                "            this.updateRelativeCoordinates();",
+                "        }",
+                "        if (this.basisOldX !== basisObject.getX()",
+                "            || this.basisOldY !== basisObject.getY()) {",
+                "            object.setPosition(",
+                "                basisObject.getX() + this.relativeX,",
+                "                basisObject.getY() + this.relativeY);",
+                "        }",
+                "    }",
+                "",
+                "    followTransformation() {",
+                "        const object = this.behavior.owner;",
+                "        const basisObject = this.basisObject;",
+                "        if (!basisObject) {",
+                "            return;",
+                "        }",
+                "        if (object.getX() !== this.ownerOldX",
+                "            || object.getY() !== this.ownerOldY",
+                "            || object.getAngle() !== this.ownerOldAngle",
+                "            || object.getWidth() !== this.ownerOldWidth",
+                "            || object.getHeight() !== this.ownerOldHeight) {",
+                "            this.updateRelativeCoordinates();",
+                "        }",
+                "        if (this.basisOldAngle !== this.basisObject.getAngle()",
+                "            || this.basisOldWidth !== this.basisObject.getWidth()",
+                "            || this.basisOldHeight !== this.basisObject.getHeight()",
+                "            || this.basisOldCenterXInScene !== this.basisObject.getCenterXInScene()",
+                "            || this.basisOldCenterYInScene !== this.basisObject.getCenterYInScene()) {",
+                "            // Unproportional dimensions changes won't work as expected",
+                "            // if the object angle is not null but nothing more can be done",
+                "            // because there is no full affine transformation on objects.",
+                "            if (basisObject.getWidth() !== this.basisOriginalWidth) {",
+                "                object.setWidth(this.relativeWidth * basisObject.getWidth());",
+                "            }",
+                "            if (basisObject.getHeight() !== this.basisOriginalHeight) {",
+                "                object.setHeight(this.relativeHeight * basisObject.getHeight());",
+                "            }",
+                "            // Follow basisObject",
+                "            if (basisObject.getAngle() === this.basisOriginalAngle",
+                "                && this.basisOriginalAngle === 0) {",
+                "                if (basisObject.getWidth() === this.basisOriginalWidth",
+                "                    || basisObject.getHeight() === this.basisOriginalHeight) {",
+                "                    if (this.basisOldX !== basisObject.getX() ||",
+                "                        this.basisOldY !== basisObject.getY()) {",
+                "                        object.setPosition(",
+                "                            basisObject.getX() + this.relativeX,",
+                "                            basisObject.getY() + this.relativeY);",
+                "                    }",
+                "                } else {",
+                "                    object.setCenterPositionInScene(",
+                "                        basisObject.getCenterXInScene() + this.relativeRotatedX * basisObject.getWidth(),",
+                "                        basisObject.getCenterYInScene() + this.relativeRotatedY * basisObject.getHeight());",
+                "                }",
+                "            } else {",
+                "                object.setAngle(basisObject.getAngle() + this.relativeAngle);",
+                "",
+                "                const deltaX = this.relativeRotatedX * basisObject.getWidth();",
+                "                const deltaY = this.relativeRotatedY * basisObject.getHeight();",
+                "                const angle = -basisObject.getAngle() * Math.PI / 180;",
+                "                const cosA = Math.cos(angle);",
+                "                const sinA = Math.sin(angle);",
+                "                object.setX(",
+                "                    basisObject.getCenterXInScene() + object.getX() - object.getCenterXInScene()",
+                "                    + deltaX * cosA + deltaY * sinA);",
+                "                object.setY(",
+                "                    basisObject.getCenterYInScene() + object.getY() - object.getCenterYInScene()",
+                "                    - deltaX * sinA + deltaY * cosA);",
+                "            }",
+                "        }",
+                "    }",
+                "}",
+                "",
+                "gdjs._stickerExtension = {",
+                "    Sticker",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Check if the object is stuck to another object.",
+          "fullName": "Is stuck to another object",
+          "functionType": "Condition",
+          "name": "IsStuck",
+          "sentence": "_PARAM1_ is stuck to _PARAM3_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const stickerBehaviorName = eventsFunctionContext.getBehaviorName(\"Behavior\");",
+                "/** @type {Hashtable<gdjs.RuntimeObject[]>} */",
+                "const stickerObjectsLists = eventsFunctionContext.getObjectsLists(\"Object\");",
+                "/** @type {Hashtable<gdjs.RuntimeObject[]>} */",
+                "const basisObjectsLists = eventsFunctionContext.getObjectsLists(\"BasisObject\");",
+                "",
+                "eventsFunctionContext.returnValue = gdjs.evtTools.object.twoListsTest(",
+                "  (stickerObject, basisObject) => {",
+                "    const sticker = stickerObject.getBehavior(stickerBehaviorName)._sticker;",
+                "    return sticker.isStuckTo(basisObject);",
+                "  },",
+                "  stickerObjectsLists,",
+                "  basisObjectsLists,",
+                "  false",
+                ");"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Sticker",
+              "name": "Object",
+              "type": "objectList"
+            },
+            {
+              "description": "Sticker behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "Sticker::Sticker",
+              "type": "behavior"
+            },
+            {
+              "description": "Basis",
+              "name": "BasisObject",
+              "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Stick the object to another. Use the action to stick the object, or unstick it later.",
+          "fullName": "Sticker",
+          "name": "Sticker",
+          "objectType": "",
+          "quickCustomizationVisibility": "hidden",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Sticker::DefineHelperClasses"
+                      },
+                      "parameters": [
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "const Sticker = gdjs._stickerExtension.Sticker;",
+                    "",
+                    "const behaviorName = eventsFunctionContext.getBehaviorName(\"Behavior\");",
+                    "const object = objects[0];",
+                    "const behavior = object.getBehavior(behaviorName);",
+                    "",
+                    "behavior._sticker = new Sticker(behavior);",
+                    "",
+                    "// Set up the scene sticker objects list - if not done already.",
+                    "runtimeScene._stickerExtension = runtimeScene._stickerExtension || {",
+                    "    allStickers: new Set(),",
+                    "};",
+                    "// Register this object as a sticker.",
+                    "/** @type {Set<gdjs.RuntimeBehavior>} */",
+                    "const allStickers = runtimeScene._stickerExtension.allStickers;",
+                    "allStickers.add(behavior);",
+                    ""
+                  ],
+                  "parameterObjects": "Object",
+                  "useStrict": true,
+                  "eventsSheetExpanded": true
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Sticker::Sticker",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "const behaviorName = eventsFunctionContext.getBehaviorName(\"Behavior\");",
+                    "const object = objects[0];",
+                    "const behavior = object.getBehavior(behaviorName);",
+                    "",
+                    "behavior._sticker.onStepPreEvents();"
+                  ],
+                  "parameterObjects": "Object",
+                  "useStrict": true,
+                  "eventsSheetExpanded": false
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Sticker::Sticker",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "const behaviorName = eventsFunctionContext.getBehaviorName(\"Behavior\");",
+                    "const object = objects[0];",
+                    "const behavior = object.getBehavior(behaviorName);",
+                    "",
+                    "behavior._sticker.followBasisObject();"
+                  ],
+                  "parameterObjects": "Object",
+                  "useStrict": true,
+                  "eventsSheetExpanded": true
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Sticker::Sticker",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Stick on another object.",
+              "fullName": "Stick",
+              "functionType": "Action",
+              "name": "Stick",
+              "sentence": "Stick _PARAM0_ to _PARAM2_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "const object = objects[0];",
+                    "const behaviorName = eventsFunctionContext.getBehaviorName(\"Behavior\");",
+                    "const basisObjects = eventsFunctionContext.getObjects(\"BasisObject\");",
+                    "",
+                    "if (basisObjects.length === 0) return;",
+                    "// An object can stick to only one object.",
+                    "const basisObject = basisObjects[0];",
+                    "object.getBehavior(behaviorName)._sticker.stickTo(basisObject);",
+                    ""
+                  ],
+                  "parameterObjects": "Object",
+                  "useStrict": true,
+                  "eventsSheetExpanded": true
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Sticker::Sticker",
+                  "type": "behavior"
+                },
+                {
+                  "description": "Object to stick to",
+                  "name": "BasisObject",
+                  "type": "objectList"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Unstick from the object it was stuck to.",
+              "fullName": "Unstick",
+              "functionType": "Action",
+              "name": "Unstick",
+              "sentence": "Unstick _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "const object = objects[0];",
+                    "const behaviorName = eventsFunctionContext.getBehaviorName(\"Behavior\");",
+                    "const behavior = object.getBehavior(behaviorName);",
+                    "",
+                    "object.getBehavior(behaviorName)._sticker.unstick();",
+                    ""
+                  ],
+                  "parameterObjects": "Object",
+                  "useStrict": true,
+                  "eventsSheetExpanded": true
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Sticker::Sticker",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onDestroy",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "const behaviorName = eventsFunctionContext.getBehaviorName(\"Behavior\");",
+                    "const object = objects[0];",
+                    "const behavior = object.getBehavior(behaviorName);",
+                    "",
+                    "/** @type {Set<gdjs.RuntimeBehavior>} */",
+                    "const allStickers = runtimeScene._stickerExtension.allStickers;",
+                    "allStickers.delete(behavior);",
+                    ""
+                  ],
+                  "parameterObjects": "Object",
+                  "useStrict": true,
+                  "eventsSheetExpanded": true
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "Sticker::Sticker",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "Only follow the position",
+              "name": "OnlyFollowPosition"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "Destroy when the object it's stuck on is destroyed",
+              "name": "IsDestroyedWithParent"
+            }
+          ],
           "sharedPropertyDescriptors": []
         }
       ],
