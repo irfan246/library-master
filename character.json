@@ -9,14 +9,14 @@
     },
     {
         "name": "penyihir_hijau",
-        "unlock": 0
+        "unlock": 1
     },
     {
         "name": "shadow_master",
-        "unlock": 0
+        "unlock": 1
     },
     {
         "name": "plague_doctor",
-        "unlock": 0
+        "unlock": 1
     }
 ]
