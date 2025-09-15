@@ -1323,6 +1323,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "Level",
       "type": "structure",
       "children": [
@@ -1334,7 +1335,7 @@
         {
           "name": "2",
           "type": "number",
-          "value": 1
+          "value": 0
         },
         {
           "name": "3",
@@ -2693,6 +2694,7 @@
       },
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2705,6 +2707,17 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"PlayerData\"",
+                "\"characters\"",
+                "",
+                "Character"
+              ]
+            },
             {
               "type": {
                 "value": "ShowLayer"
@@ -2721,6 +2734,26 @@
               "parameters": [
                 "",
                 "\"Setting\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "selectedCharacter",
+                "=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "DebuggerTools::ConsoleLog"
+              },
+              "parameters": [
+                "selectedCharacter",
+                "\"info\"",
+                ""
               ]
             }
           ],
@@ -9551,6 +9584,7 @@
       },
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -10270,6 +10304,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -10307,6 +10342,7 @@
           ],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Repeat",
               "repeatExpression": "VariableChildCount(BukuList)",
               "conditions": [],
@@ -11339,7 +11375,7 @@
                 "",
                 "\"Click\"",
                 "<",
-                "0.095"
+                "0.1"
               ]
             },
             {
@@ -11430,7 +11466,7 @@
                 "",
                 "\"Click\"",
                 ">=",
-                "0.095"
+                "0.1"
               ]
             },
             {
@@ -22878,6 +22914,126 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Shadow_Master",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "shadow master1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 723,
+                            "y": 0
+                          },
+                          {
+                            "x": 723,
+                            "y": 1138
+                          },
+                          {
+                            "x": 0,
+                            "y": 1138
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Plague_Doctro",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "plague doctor.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 988,
+                            "y": 1
+                          },
+                          {
+                            "x": 988,
+                            "y": 1318
+                          },
+                          {
+                            "x": 1,
+                            "y": 1318
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -22899,6 +23055,12 @@
             "objectName": "penyihir_hijau"
           },
           {
+            "objectName": "Shadow_Master"
+          },
+          {
+            "objectName": "Plague_Doctro"
+          },
+          {
             "objectName": "Button_Claim"
           },
           {
@@ -22908,6 +23070,7 @@
       },
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -23087,9 +23250,9 @@
                     "value": "NumberVariable"
                   },
                   "parameters": [
-                    "Click.Level1",
+                    "Click.Level2",
                     "=",
-                    "2"
+                    "1"
                   ]
                 }
               ],
@@ -23180,7 +23343,7 @@
                       "parameters": [
                         "Book_Level_2",
                         "=",
-                        "90",
+                        "120",
                         "=",
                         "-78"
                       ]
@@ -23191,9 +23354,9 @@
                       },
                       "parameters": [
                         "",
-                        "penyihir_hijau",
+                        "Shadow_Master",
                         "715",
-                        "250",
+                        "230",
                         ""
                       ]
                     },
@@ -23202,10 +23365,10 @@
                         "value": "ResizableCapability::ResizableBehavior::SetSize"
                       },
                       "parameters": [
-                        "penyihir_hijau",
+                        "Shadow_Master",
                         "Resizable",
                         "124",
-                        "152.9"
+                        "164"
                       ]
                     },
                     {
@@ -23244,9 +23407,9 @@
                     "value": "NumberVariable"
                   },
                   "parameters": [
-                    "Click.Level1",
+                    "Click.Level3",
                     "=",
-                    "3"
+                    "1"
                   ]
                 }
               ],
@@ -23339,7 +23502,7 @@
                         "=",
                         "90",
                         "=",
-                        "-78"
+                        "-100"
                       ]
                     },
                     {
@@ -23348,9 +23511,9 @@
                       },
                       "parameters": [
                         "",
-                        "penyihir_hijau",
+                        "Plague_Doctro",
                         "715",
-                        "250",
+                        "240",
                         ""
                       ]
                     },
@@ -23359,7 +23522,7 @@
                         "value": "ResizableCapability::ResizableBehavior::SetSize"
                       },
                       "parameters": [
-                        "penyihir_hijau",
+                        "Plague_Doctro",
                         "Resizable",
                         "124",
                         "152.9"
@@ -23395,6 +23558,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
