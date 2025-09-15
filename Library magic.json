@@ -1198,6 +1198,70 @@
         "name": "racun.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "bukubuka1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bukubuka1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "bukubuka2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bukubuka2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "bukubuka3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bukubuka3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "bukubuka4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bukubuka4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "book close 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "book close 2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "book open 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "book open 2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "book close 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "book close 3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "book open 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "book open 3.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1259,7 +1323,6 @@
       ]
     },
     {
-      "folded": true,
       "name": "Level",
       "type": "structure",
       "children": [
@@ -1271,7 +1334,7 @@
         {
           "name": "2",
           "type": "number",
-          "value": 0
+          "value": 1
         },
         {
           "name": "3",
@@ -1315,7 +1378,7 @@
     {
       "name": "selectedCharacter",
       "type": "string",
-      "value": "\"\""
+      "value": ""
     },
     {
       "name": "Scene",
@@ -1386,6 +1449,11 @@
       "name": "EnemyName",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "TempLoad",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
@@ -3870,28 +3938,6 @@
           "actions": [
             {
               "type": {
-                "value": "ReadStringFromStorage"
-              },
-              "parameters": [
-                "\"PlayerData\"",
-                "\"characters\"",
-                "",
-                "CharacterJSON"
-              ]
-            },
-            {
-              "type": {
-                "value": "JSONResourceLoader::LoadJSONToGlobal"
-              },
-              "parameters": [
-                "",
-                "character.json",
-                "Character",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -3943,6 +3989,81 @@
           ],
           "events": [
             {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GroupExists"
+                  },
+                  "parameters": [
+                    "\"PlayerData\"",
+                    "\"characters\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ReadStringFromStorage"
+                  },
+                  "parameters": [
+                    "\"PlayerData\"",
+                    "\"characters\"",
+                    "",
+                    "TempLoad"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "JSONToVariableStructure2"
+                  },
+                  "parameters": [
+                    "TempLoad",
+                    "Character"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "GroupExists"
+                  },
+                  "parameters": [
+                    "\"PlayerData\"",
+                    "\"characters\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "JSONResourceLoader::LoadJSONToGlobal"
+                  },
+                  "parameters": [
+                    "",
+                    "character.json",
+                    "Character",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"PlayerData\"",
+                    "\"characters\"",
+                    "ToJSON(Character)"
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Repeat",
               "repeatExpression": "5",
               "conditions": [],
@@ -5356,7 +5477,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.584378441074093,
+        "zoomFactor": 0.3673257545058826,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -5490,6 +5611,78 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 228,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Collison",
+          "opacity": 0,
+          "persistentUuid": "f1ab11e8-fad7-46b8-9a96-b566069bc980",
+          "width": 173,
+          "x": 182,
+          "y": 268,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "level",
+              "type": "number",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 249,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Collison",
+          "opacity": 0,
+          "persistentUuid": "da2c9ba1-7871-4fc4-904f-9a2814db9854",
+          "width": 191,
+          "x": 544,
+          "y": 253,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "level",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 214,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Collison",
+          "opacity": 0,
+          "persistentUuid": "f074ad6a-f739-47f7-8900-ac2ecd1832dd",
+          "width": 195,
+          "x": 930,
+          "y": 276,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "level",
+              "type": "number",
+              "value": 2
+            }
+          ]
         }
       ],
       "objects": [
@@ -6145,6 +6338,72 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Collison",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "level",
+              "type": "number",
+              "value": 0
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 2560,
+                            "y": 0
+                          },
+                          {
+                            "x": 2560,
+                            "y": 1440
+                          },
+                          {
+                            "x": 0,
+                            "y": 1440
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -6182,6 +6441,9 @@
           },
           {
             "objectName": "Text_Tips2"
+          },
+          {
+            "objectName": "Collison"
           }
         ]
       },
@@ -6194,10 +6456,21 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "Level_1",
+                "Collison",
                 "",
                 "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Collison",
+                "level",
+                "=",
+                "1"
               ]
             },
             {
@@ -6260,6 +6533,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6267,10 +6541,21 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "Level_2",
+                "Collison",
                 "",
                 "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Collison",
+                "level",
+                "=",
+                "2"
               ]
             },
             {
@@ -6394,6 +6679,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6401,10 +6687,21 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "Level_3",
+                "Collison",
                 "",
                 "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Collison",
+                "level",
+                "=",
+                "3"
               ]
             },
             {
@@ -6706,7 +7003,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6244537826600083,
+        "zoomFactor": 0.3216911764705934,
         "windowMask": false
       },
       "objectsGroups": [
@@ -6820,6 +7117,11 @@
           "name": "BookId",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "Mouse",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -7315,6 +7617,24 @@
               "value": 4
             }
           ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 387,
+          "keepRatio": true,
+          "layer": "Game",
+          "name": "Buku_Open",
+          "opacity": 0,
+          "persistentUuid": "5e480639-bdbf-48e0-9c7c-6c09b0b0f991",
+          "width": 400,
+          "x": 470,
+          "y": 167,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -8956,6 +9276,215 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Buku_Open",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "P",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bukubuka1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 47,
+                            "y": 6
+                          },
+                          {
+                            "x": 258,
+                            "y": 6
+                          },
+                          {
+                            "x": 258,
+                            "y": 298
+                          },
+                          {
+                            "x": 47,
+                            "y": 298
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "H",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bukubuka2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 47,
+                            "y": 6
+                          },
+                          {
+                            "x": 258,
+                            "y": 6
+                          },
+                          {
+                            "x": 258,
+                            "y": 298
+                          },
+                          {
+                            "x": 47,
+                            "y": 298
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "M",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bukubuka3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 47,
+                            "y": 6
+                          },
+                          {
+                            "x": 258,
+                            "y": 6
+                          },
+                          {
+                            "x": 258,
+                            "y": 298
+                          },
+                          {
+                            "x": 47,
+                            "y": 298
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "L",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bukubuka4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 47,
+                            "y": 6
+                          },
+                          {
+                            "x": 258,
+                            "y": 6
+                          },
+                          {
+                            "x": 258,
+                            "y": 298
+                          },
+                          {
+                            "x": 47,
+                            "y": 298
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -9014,12 +9543,14 @@
           },
           {
             "objectName": "Level_3"
+          },
+          {
+            "objectName": "Buku_Open"
           }
         ]
       },
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -9135,16 +9666,6 @@
             },
             {
               "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "SpawnPending",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
                 "value": "Cache"
               },
               "parameters": [
@@ -9181,7 +9702,51 @@
               },
               "parameters": [
                 "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Prolog\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
                 "\"Game\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Prolog\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                ""
               ]
             }
           ],
@@ -9280,6 +9845,184 @@
                     ""
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Click.Level1",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Text_Level",
+                "Text",
+                "=",
+                "\"Level 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Click.Level2",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Text_Level",
+                "Text",
+                "=",
+                "\"Level 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Click.Level3",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Text_Level",
+                "Text",
+                "=",
+                "\"Level 3\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Prolog\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::IsFinished"
+              },
+              "parameters": [
+                "Text_Prolog",
+                "AutoTyping",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Game\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Prolog\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Game\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SpawnPending",
+                "=",
+                "1"
               ]
             }
           ]
@@ -9527,7 +10270,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -9565,7 +10307,6 @@
           ],
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Repeat",
               "repeatExpression": "VariableChildCount(BukuList)",
               "conditions": [],
@@ -9734,6 +10475,27 @@
                         "Animation",
                         "=",
                         "Book.huruf"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Buku_Open",
+                        "Animation",
+                        "=",
+                        "Book.huruf"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Draggable",
+                        "no"
                       ]
                     },
                     {
@@ -9969,6 +10731,27 @@
                     },
                     {
                       "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Buku_Open",
+                        "Animation",
+                        "=",
+                        "Book.huruf"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Draggable",
+                        "no"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
                       },
                       "parameters": [
@@ -10196,6 +10979,27 @@
                         "Animation",
                         "=",
                         "Book.huruf"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Buku_Open",
+                        "Animation",
+                        "=",
+                        "Book.huruf"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Book",
+                        "Draggable",
+                        "no"
                       ]
                     },
                     {
@@ -10475,9 +11279,160 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Mouse",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Click\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"Click\"",
+                "<",
+                "0.095"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Mouse",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Book",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::Value"
+              },
+              "parameters": [
+                "Buku_Open",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Book",
+                "Draggable",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Buku_Open",
+                "Tween",
+                "\"bukuOpen\"",
+                "255",
+                "\"linear\"",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Mouse",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
           "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"Click\"",
+                ">=",
+                "0.095"
+              ]
+            },
             {
               "type": {
                 "value": "MouseButtonFromTextPressed"
@@ -10500,23 +11455,17 @@
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
+                "value": "OpacityCapability::OpacityBehavior::Value"
               },
-              "parameters": []
+              "parameters": [
+                "Buku_Open",
+                "Opacity",
+                "=",
+                "0"
+              ]
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "Tween::StopTween"
-              },
-              "parameters": [
-                "Book",
-                "Tween",
-                "\"book\"",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "SetNumberVariable"
@@ -10554,6 +11503,27 @@
                     "Draggable",
                     "yes"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::StopTween"
+                  },
+                  "parameters": [
+                    "Book",
+                    "Tween",
+                    "\"book\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Mouse",
+                    "False",
+                    ""
+                  ]
                 }
               ]
             },
@@ -10583,6 +11553,67 @@
                     ""
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::Value"
+              },
+              "parameters": [
+                "Buku_Open",
+                "Opacity",
+                "=",
+                "255"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Book",
+                "Draggable",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Buku_Open",
+                "Tween",
+                "\"bukuOpen\"",
+                "0",
+                "\"linear\"",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Mouse",
+                "False",
+                ""
               ]
             }
           ]
@@ -12319,7 +13350,7 @@
           "isLocked": false,
           "name": "",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [
             {
               "defaultSize": true,
@@ -12436,7 +13467,7 @@
           "isLocked": false,
           "name": "Game",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
@@ -16172,6 +17203,66 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -16224,12 +17315,14 @@
           },
           {
             "objectName": "Effect_Tambahan"
+          },
+          {
+            "objectName": "NewSprite"
           }
         ]
       },
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -16706,6 +17799,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -20486,36 +21580,6 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
-              },
-              "parameters": [
-                "Enemy_Penyihir_Hijau",
-                "Animation",
-                "=",
-                "\"hurt\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Enemy_Penyihir_Hijau",
-                "=",
-                "800",
-                "=",
-                "290"
-              ]
-            }
-          ]
-        },
-        {
           "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -20570,10 +21634,266 @@
           ]
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Player_Penyihir_Unggu",
+                "Animation",
+                "=",
+                "\"hurt\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Player_Penyihir_Unggu",
+                "=",
+                "120",
+                "=",
+                "250"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Player_Penyihir_Pink",
+                "Animation",
+                "=",
+                "\"hurt\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Player_Penyihir_Pink",
+                "=",
+                "140",
+                "=",
+                "280"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Player_Penyihir_Hijau",
+                "Animation",
+                "=",
+                "\"hurt\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Player_Penyihir_Hijau",
+                "=",
+                "140",
+                "=",
+                "290"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Player_Shadow_Master",
+                "Animation",
+                "=",
+                "\"hurt\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Player_Shadow_Master",
+                "=",
+                "170",
+                "=",
+                "280"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Player_Plague_Doctor",
+                "Animation",
+                "=",
+                "\"hurt\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Player_Plague_Doctor",
+                "=",
+                "120",
+                "=",
+                "150"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "Player_Plague_Doctor",
+                "Resizable",
+                "393",
+                "483"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Enemy_Penyihir_Hijau",
+                "Animation",
+                "=",
+                "\"hurt\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Enemy_Penyihir_Hijau",
+                "=",
+                "800",
+                "=",
+                "290"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Enemy_Shadow_Master",
+                "Animation",
+                "=",
+                "\"hurt\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Enemy_Shadow_Master",
+                "=",
+                "840",
+                "=",
+                "300"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Enemy_Plague_Doctor",
+                "Animation",
+                "=",
+                "\"hurt\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Enemy_Plague_Doctor",
+                "=",
+                "700",
+                "=",
+                "172"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "Enemy_Plague_Doctor",
+                "Resizable",
+                "393",
+                "483"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -20732,23 +22052,6 @@
           "x": 290,
           "y": 559,
           "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 152.9,
-          "layer": "",
-          "name": "penyihir_hijau",
-          "opacity": 0,
-          "persistentUuid": "4c5ae762-5651-4016-8414-854456948002",
-          "width": 124,
-          "x": 715,
-          "y": 250,
-          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -21191,6 +22494,390 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Book_Level_2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "close",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book close 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 254,
+                            "y": 264
+                          },
+                          {
+                            "x": 1063,
+                            "y": 264
+                          },
+                          {
+                            "x": 1063,
+                            "y": 1176
+                          },
+                          {
+                            "x": 254,
+                            "y": 1176
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "animation",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book close 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 254,
+                            "y": 264
+                          },
+                          {
+                            "x": 1063,
+                            "y": 264
+                          },
+                          {
+                            "x": 1063,
+                            "y": 1176
+                          },
+                          {
+                            "x": 254,
+                            "y": 1176
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book open 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 254,
+                            "y": 264
+                          },
+                          {
+                            "x": 1063,
+                            "y": 264
+                          },
+                          {
+                            "x": 1063,
+                            "y": 1176
+                          },
+                          {
+                            "x": 254,
+                            "y": 1176
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "open",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book open 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 254,
+                            "y": 264
+                          },
+                          {
+                            "x": 1063,
+                            "y": 264
+                          },
+                          {
+                            "x": 1063,
+                            "y": 1176
+                          },
+                          {
+                            "x": 254,
+                            "y": 1176
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Book_Level_3",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "close",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book close 3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 252,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 1176
+                          },
+                          {
+                            "x": 252,
+                            "y": 1176
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "animation",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book close 3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 252,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 1176
+                          },
+                          {
+                            "x": 252,
+                            "y": 1176
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book open 3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 252,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 1176
+                          },
+                          {
+                            "x": 252,
+                            "y": 1176
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "open",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "book open 3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 252,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 264
+                          },
+                          {
+                            "x": 1062,
+                            "y": 1176
+                          },
+                          {
+                            "x": 252,
+                            "y": 1176
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -21201,6 +22888,12 @@
           },
           {
             "objectName": "Book_Level_1"
+          },
+          {
+            "objectName": "Book_Level_2"
+          },
+          {
+            "objectName": "Book_Level_3"
           },
           {
             "objectName": "penyihir_hijau"
@@ -21226,76 +22919,77 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Book_Level_1",
-                "273",
-                "-51",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResizableCapability::ResizableBehavior::SetSize"
-              },
-              "parameters": [
-                "Book_Level_1",
-                "Resizable",
-                "752",
-                "809"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Book_Level_1",
-                "Animation",
-                "=",
-                "\"animation\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.2"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Book_Level_1",
-                "Animation",
-                "=",
-                "\"open\""
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level1",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Book_Level_1",
+                    "273",
+                    "-51",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Book_Level_1",
+                    "Resizable",
+                    "752",
+                    "809"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Book_Level_1",
+                    "Animation",
+                    "=",
+                    "\"animation\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
                     "Book_Level_1",
@@ -21305,28 +22999,110 @@
                   ]
                 }
               ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Book_Level_1",
+                        "Animation",
+                        "=",
+                        "\"open\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Book_Level_1",
+                        "=",
+                        "90",
+                        "=",
+                        "-78"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "penyihir_hijau",
+                        "715",
+                        "250",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "penyihir_hijau",
+                        "Resizable",
+                        "124",
+                        "152.9"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Button_Claim",
+                        "660",
+                        "420",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "Button_Claim",
+                        "Resizable",
+                        "243",
+                        "96"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level1",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
               "actions": [
                 {
                   "type": {
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "Book_Level_1",
-                    "=",
-                    "90",
-                    "=",
-                    "-78"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Create"
                   },
                   "parameters": [
                     "",
-                    "penyihir_hijau",
-                    "715",
-                    "250",
+                    "Book_Level_2",
+                    "273",
+                    "-51",
                     ""
                   ]
                 },
@@ -21335,21 +23111,155 @@
                     "value": "ResizableCapability::ResizableBehavior::SetSize"
                   },
                   "parameters": [
-                    "penyihir_hijau",
+                    "Book_Level_2",
                     "Resizable",
-                    "124",
-                    "152.9"
+                    "752",
+                    "809"
                   ]
                 },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Book_Level_2",
+                    "Animation",
+                    "=",
+                    "\"animation\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Book_Level_2",
+                    "Animation",
+                    "=",
+                    "\"open\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Book_Level_2",
+                        "Animation",
+                        "=",
+                        "\"open\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Book_Level_2",
+                        "=",
+                        "90",
+                        "=",
+                        "-78"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "penyihir_hijau",
+                        "715",
+                        "250",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "penyihir_hijau",
+                        "Resizable",
+                        "124",
+                        "152.9"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Button_Claim",
+                        "660",
+                        "420",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "Button_Claim",
+                        "Resizable",
+                        "243",
+                        "96"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level1",
+                    "=",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [
                 {
                   "type": {
                     "value": "Create"
                   },
                   "parameters": [
                     "",
-                    "Button_Claim",
-                    "660",
-                    "420",
+                    "Book_Level_3",
+                    "273",
+                    "-51",
                     ""
                   ]
                 },
@@ -21358,10 +23268,277 @@
                     "value": "ResizableCapability::ResizableBehavior::SetSize"
                   },
                   "parameters": [
-                    "Button_Claim",
+                    "Book_Level_3",
                     "Resizable",
-                    "243",
-                    "96"
+                    "752",
+                    "809"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Book_Level_3",
+                    "Animation",
+                    "=",
+                    "\"animation\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Book_Level_3",
+                    "Animation",
+                    "=",
+                    "\"open\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Book_Level_3",
+                        "Animation",
+                        "=",
+                        "\"open\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Book_Level_3",
+                        "=",
+                        "90",
+                        "=",
+                        "-78"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "penyihir_hijau",
+                        "715",
+                        "250",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "penyihir_hijau",
+                        "Resizable",
+                        "124",
+                        "152.9"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Button_Claim",
+                        "660",
+                        "420",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResizableCapability::ResizableBehavior::SetSize"
+                      },
+                      "parameters": [
+                        "Button_Claim",
+                        "Resizable",
+                        "243",
+                        "96"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Button_Claim",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level1",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Character[2].unlock",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level1",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Character[3].unlock",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Click.Level1",
+                    "=",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Character[4].unlock",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"PlayerData\"",
+                    "\"characters\"",
+                    "ToJSON(Character)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Scene",
+                    "=",
+                    "\"Home\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Loading\"",
+                    ""
                   ]
                 }
               ]
@@ -23348,22 +25525,11 @@
             },
             {
               "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "Scene",
-                "=",
-                "\"Home\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene"
+                "value": "PushScene"
               },
               "parameters": [
                 "",
-                "\"Loading\"",
-                ""
+                "\"Reward\""
               ]
             }
           ]
